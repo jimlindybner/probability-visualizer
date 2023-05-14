@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odds Visualizer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-copy">Odds Visualizer</div>
+    </header>
+    <main>
+        <h1 class="h1">Visualize Your Odds!</h1>
+        <form action="#" method="get" name="visualization_form">
+            <div id="question">
+                What does &ldquo;
+                <input type="number" name="numerator" id="numerator" min="1" max="1000000" step="1" required>
+                -in-
+                <input type="number" name="denominator" id="denominator" min="1" max="1000000" step="1" required>
+                odds&rdquo; look&nbsp;like?
+            </div>
+            <div>
+                <button type="submit" id="btn-submit">Visualize</button>
+            </div>
+        </form>
+        <div class="output-area"></div>
+        <div id="ans"></div>
+        <p>This app is inspired by the book <em><a href="https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444" target="_blank">Making Numbers Count: The Art and Science of Communicating Numbers</a></em> (2022) by Chip Heath and Karla Starr.</p>
+    </main>
+    <footer>
+        <div class="footer-copy">&copy; <span id="copy-yr"></span> Jim Lin-Dybner</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
+
