@@ -14,6 +14,7 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
+    const msgInputError = `There is an invalid input in one or more fields. \nPlease only enter whole numbers.`;
     let gcd;
 
     // focus on formNumerator
@@ -49,6 +50,31 @@ window.onload = () => {
         let simpleDenominator;
         let percentage;
         let decimal;
+
+        // form input validation
+        // if inputs are missing
+        if (!numerator) {
+            alert(msgInputError);
+            return false;
+        }
+        if (!denominator) {
+            alert(msgInputError);
+            return false;
+        }
+
+        // if inputs are not whole numbers
+        if (inputNumerator.includes(".") || inputNumerator.includes("-")) {
+            if (inputDenominator.includes(".") || inputDenominator.includes("-")) {
+                formDenominator.value = "";
+            }
+            formNumerator.value = "";
+            alert(msgInputError);
+            return false;
+        } else if (inputDenominator.includes(".") || inputDenominator.includes("-")) {
+            formDenominator.value = "";
+            alert(msgInputError);
+            return false;
+        }
 
         // hide question & btnSubmit
         question.style.display = "none";
