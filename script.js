@@ -29,6 +29,7 @@ window.onload = () => {
         const numerator = parseInt(inputNumerator);
         const denominator = parseInt(inputDenominator);
         let percentage;
+        let decimal;
 
         // hide question & btnSubmit
         question.style.display = "none";
@@ -39,7 +40,7 @@ window.onload = () => {
 
         // calculate decimal and percentage
         decimal = numerator / denominator;
-        decimalToFixed = decimal.toFixed(2);
+        decimalToFixed = decimal.toFixed(3);
         percentage = decimal * 100;
         percentageToFixed = percentage.toFixed(2);
 
