@@ -10,7 +10,7 @@ window.onload = () => {
     const btnAgain = document.querySelector("#btn-again");
     const outputArea = document.querySelector(".output-area");
     const question = document.querySelector("#question");
-    const outputInPercent = document.querySelector("#ans");
+    const outputPercent = document.querySelector("#ans");
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
@@ -22,22 +22,27 @@ window.onload = () => {
     function processForm(e) {
         // prevent form submission
         e.preventDefault();
+
         // variables
         const inputNumerator = formNumerator.value;
         const inputDenominator = formDenominator.value;
         const numerator = parseInt(inputNumerator);
         const denominator = parseInt(inputDenominator);
         let percentage;
+
         // hide question & btnSubmit
         question.style.display = "none";
         btnSubmit.style.display = "none";
+
         // show btnAgain
         btnAgain.style.display = "block";
+
         // calculate percentage
         percentage = numerator / denominator * 100;
         percentageToFixed = percentage.toFixed(3);
-        // output to outputInPercent
-        outputInPercent.innerHTML = `That's about ${percentageToFixed}%.`;
+
+        // output to outputPercent
+        outputPercent.innerHTML = `${numerator}-in-${denominator} odds is (about) ${percentageToFixed}%.`;
 
         // output-area: create circles based on user denominator input
         for (let i = 0; i < (denominator - numerator); i++) {

@@ -74,15 +74,19 @@ footer {
     line-height: 1.25;
 }
 
-.credits a:link {
+.copyright {
+    margin-top: 1rem;
+}
+
+.inspiration a:link {
     color: rgb(195, 0, 0);
 }
 
-.credits a:visited {
+.inspiration a:visited {
     color: rgb(195, 0, 0);
 }
 
-.credits a:hover {
+.inspiration a:hover {
     color: rgb(255, 0, 0);
 }
 
