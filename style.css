@@ -98,15 +98,15 @@ footer {
     margin-top: 1rem;
 }
 
-.inspiration a:link {
+a:link {
     color: var(--color-tertiary);
 }
 
-.inspiration a:visited {
+a:visited {
     color: var(--color-tertiary);
 }
 
-.inspiration a:hover {
+a:hover {
     color: var(--color-quaternary);
 }
 
