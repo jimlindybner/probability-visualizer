@@ -73,18 +73,18 @@ window.onload = () => {
         // output to outputAns
         outputAns.innerHTML = `${numerator} in ${denominator} (${simpleNumerator}/${simpleDenominator}) is:<ul><li>probability of ${decimalToFixed} or ${percentageToFixed}% chance</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
 
-        // output-area: create circles based on user numerator input
+        // output-area: create balls based on user numerator input
         for (let i = 0; i < simpleNumerator; i++) {
-            let circle = document.createElement("div");
-            circle.className = "circle-red";
-            outputArea.appendChild(circle);
+            let ball = document.createElement("div");
+            ball.className = "ball-red";
+            outputArea.appendChild(ball);
         }
 
-        // output-area: create circles based on user denominator input
+        // output-area: create balls based on user denominator input
         for (let i = 0; i < (simpleDenominator - simpleNumerator); i++) {
-            let circle = document.createElement("div");
-            circle.className = "circle";
-            outputArea.appendChild(circle);
+            let ball = document.createElement("div");
+            ball.className = "ball";
+            outputArea.appendChild(ball);
         }
 
         // focus on btnAgain

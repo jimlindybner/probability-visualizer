@@ -34,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    max-width: 36rem;
+    margin: 0 auto;
 }
 ol, ul {
 	list-style: none;
@@ -62,16 +64,16 @@ table {
 }
 
 html {
-    font-family: 'Neucha', cursive;
+    font-family: 'Neucha', Arial, sans-serif;
     font-size: 16px;
     background-color: var(--bg-color);
 }
 
-ol {
+ul {
     margin-left: 1rem;
 }
 
-li {
+ul li {
     list-style: disc;
     margin-left: 1.25rem;
     line-height: 1.25;
@@ -115,7 +117,7 @@ main {
 h1,
 .h1 {
     display: inline-block;
-    color: #000;
+    color: var(--color-primary);
     font-size: 2rem;
     margin: 0.5rem 0;
 }
@@ -141,19 +143,19 @@ h1,
 
 #btn-submit,
 #btn-again {
-    font-family: 'Neucha', cursive;
+    font-family: 'Neucha', Arial, sans-serif;
     font-size: 1rem;
-    border: 0.125rem solid #000;
+    border: 0.125rem solid var(--color-primary);
     border-radius: 0.5rem;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     padding: 0.5rem 1rem;
 }
 
 div.output-area {
     margin: 1rem 0;
     height: 60vh;
-    background-color: #fff;
+    background-color: var(--color-secondary);
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -162,17 +164,17 @@ div.output-area {
     border-radius: 0.5rem;
 }
 
-.circle,
-.circle-red {
+.ball,
+.ball-red {
     border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid var(--color-primary);
     margin: 0.2rem;
     width: 1rem;
     height: 1rem;
 }
 
-.circle-red {
-    background-color: rgb(255, 0, 0);
+.ball-red {
+    background-color: var(--color-tertiary);
 }
 
 #btn-again {
