@@ -19,9 +19,9 @@ window.onload = () => {
     // focus on formNumerator
     formNumerator.focus();
 
-    // function
+    // functions
     // greatest common divisor
-    function twoNumGCD(x, y) {
+    let twoNumGCD = (x, y) => {
         if ((typeof x !== 'number') || (typeof y !== 'number')) 
           return false;
         x = Math.abs(x);
@@ -31,14 +31,14 @@ window.onload = () => {
           y = x % y;
           x = t;
         }
-        // get GCD
+        // assign gcd value
         gcd = x;
-      }
+    }
 
     // process form
-    function processForm(e) {
+    let processForm = event => {
         // prevent form submission
-        e.preventDefault();
+        event.preventDefault();
 
         // variables
         const inputNumerator = formNumerator.value;
@@ -86,7 +86,7 @@ window.onload = () => {
             circle.className = "circle";
             outputArea.appendChild(circle);
         }
-        
+
         // focus on btnAgain
         btnAgain.focus();
     }
