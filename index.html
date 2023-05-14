@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odds Visualizer</title>
+    <title>Probability Visualizer</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <div class="header-copy">Odds Visualizer</div>
+        <div class="header-copy">Probability Visualizer</div>
     </header>
     <main>
         <h1 class="h1">Visualize Your Odds!</h1>
         <div id="ans"></div>
         <form action="#" method="get" name="visualization_form">
             <div id="question">
-                What does &ldquo;
+                What does a/an &ldquo;
                 <input type="number" name="numerator" id="numerator" min="1" max="1000000" step="1" required>
                 -in-
                 <input type="number" name="denominator" id="denominator" min="1" max="1000000" step="1" required>
-                odds&rdquo; look&nbsp;like?
+                chance&rdquo; look&nbsp;like?
             </div>
             <div>
                 <button type="submit" id="btn-submit">Visualize!</button>

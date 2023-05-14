@@ -39,10 +39,10 @@ window.onload = () => {
 
         // calculate percentage
         percentage = numerator / denominator * 100;
-        percentageToFixed = percentage.toFixed(3);
+        percentageToFixed = percentage.toFixed(2);
 
         // output to outputPercent
-        outputPercent.innerHTML = `${numerator}-in-${denominator} odds is (about) ${percentageToFixed}%.`;
+        outputPercent.innerHTML = `${numerator} in ${denominator} is (approx.) ${percentageToFixed}% chance, or ${numerator}-to-${denominator - numerator} odds.`;
 
         // output-area: create circles based on user denominator input
         for (let i = 0; i < (denominator - numerator); i++) {
