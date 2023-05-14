@@ -51,27 +51,18 @@ window.onload = () => {
         let percentage;
         let decimal;
 
-        // form input validation
-        // if inputs are missing
-        if (!numerator) {
-            alert(msgInputError);
-            return false;
-        }
-        if (!denominator) {
-            alert(msgInputError);
-            return false;
-        }
-
-        // if inputs are not whole numbers
-        if (inputNumerator.includes(".") || inputNumerator.includes("-")) {
-            if (inputDenominator.includes(".") || inputDenominator.includes("-")) {
+        // form validation: if inputs are missing or not whole numbers
+        if (inputNumerator === "" || inputNumerator.includes(".") || inputNumerator.includes("-")) {
+            if (inputDenominator === "" || inputDenominator.includes(".") || inputDenominator.includes("-")) {
                 formDenominator.value = "";
             }
             formNumerator.value = "";
+            formNumerator.focus();
             alert(msgInputError);
             return false;
-        } else if (inputDenominator.includes(".") || inputDenominator.includes("-")) {
+        } else if (inputDenominator === "" || inputDenominator.includes(".") || inputDenominator.includes("-")) {
             formDenominator.value = "";
+            formDenominator.focus();
             alert(msgInputError);
             return false;
         }
