@@ -44,7 +44,7 @@ window.onload = () => {
         percentageToFixed = percentage.toFixed(2);
 
         // output to outputAns
-        outputAns.innerHTML = `${numerator} in ${denominator} is:<ul><li>probability of ${decimalToFixed}</li><li>${percentageToFixed}% chance</li><li>${numerator}-to-${denominator - numerator} odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
+        outputAns.innerHTML = `${numerator} in ${denominator} is:<ul><li>probability of ${decimalToFixed} or ${percentageToFixed}% chance</li><li>${numerator}-to-${denominator - numerator} odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
 
         // output-area: create circles based on user denominator input
         for (let i = 0; i < (denominator - numerator); i++) {
