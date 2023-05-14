@@ -13,6 +13,7 @@
     </header>
     <main>
         <h1 class="h1">Visualize Your Odds!</h1>
+        <div id="ans"></div>
         <form action="#" method="get" name="visualization_form">
             <div id="question">
                 What does &ldquo;
@@ -22,15 +23,17 @@
                 odds&rdquo; look&nbsp;like?
             </div>
             <div>
-                <button type="submit" id="btn-submit">Visualize</button>
+                <button type="submit" id="btn-submit">Visualize!</button>
+                <button id="btn-again">One More!</button>
             </div>
         </form>
         <div class="output-area"></div>
-        <div id="ans"></div>
-        <p>This app is inspired by the book <em><a href="https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444" target="_blank">Making Numbers Count: The Art and Science of Communicating Numbers</a></em> (2022) by Chip Heath and Karla Starr.</p>
     </main>
     <footer>
-        <div class="footer-copy">&copy; <span id="copy-yr"></span> Jim Lin-Dybner</div>
+        <div class="footer-copy">
+            <div class="credits">This visualizer is inspired by the 2022 book <em><a href="https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444" target="_blank">Making Numbers Count: The Art and Science of Communicating Numbers</a></em> by Chip Heath and Karla Starr.</div>
+            <div class="copyright">&copy; <span id="copy-yr"></span> Jim Lin-Dybner</div>
+        </div>
     </footer>
     <script src="./script.js"></script>
 </body>

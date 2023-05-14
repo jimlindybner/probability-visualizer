@@ -7,11 +7,16 @@ window.onload = () => {
 
     // form handles
     const btnSubmit = document.querySelector("#btn-submit");
+    const btnAgain = document.querySelector("#btn-again");
     const outputArea = document.querySelector(".output-area");
+    const question = document.querySelector("#question");
     const outputInPercent = document.querySelector("#ans");
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
+
+    // focus on formNumerator
+    formNumerator.focus();
 
     // function
     function processForm(e) {
@@ -23,6 +28,11 @@ window.onload = () => {
         const numerator = parseInt(inputNumerator);
         const denominator = parseInt(inputDenominator);
         let percentage;
+        // hide question & btnSubmit
+        question.style.display = "none";
+        btnSubmit.style.display = "none";
+        // show btnAgain
+        btnAgain.style.display = "block";
         // calculate percentage
         percentage = numerator / denominator * 100;
         percentageToFixed = percentage.toFixed(3);
@@ -41,8 +51,13 @@ window.onload = () => {
             circle.className = "circle-red";
             outputArea.appendChild(circle);
         }
+        // focus on btnAgain
+        btnAgain.focus();
     }
 
     // event listener
     btnSubmit.addEventListener("click", processForm);
+    btnAgain.addEventListener("click", () => {
+        window.location.reload();
+    })
 }
