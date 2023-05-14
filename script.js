@@ -5,7 +5,7 @@ window.onload = () => {
     let copyYr = document.querySelector("#copy-yr");
     copyYr.innerHTML = currentYr;
 
-    // form handles
+    // form handles & variables
     const btnSubmit = document.querySelector("#btn-submit");
     const btnAgain = document.querySelector("#btn-again");
     const outputArea = document.querySelector(".output-area");
@@ -14,11 +14,28 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
+    let gcd;
 
     // focus on formNumerator
     formNumerator.focus();
 
     // function
+    // greatest common divisor
+    function twoNumGCD(x, y) {
+        if ((typeof x !== 'number') || (typeof y !== 'number')) 
+          return false;
+        x = Math.abs(x);
+        y = Math.abs(y);
+        while(y) {
+          let t = y;
+          y = x % y;
+          x = t;
+        }
+        // get GCD
+        gcd = x;
+      }
+
+    // process form
     function processForm(e) {
         // prevent form submission
         e.preventDefault();
@@ -28,6 +45,8 @@ window.onload = () => {
         const inputDenominator = formDenominator.value;
         const numerator = parseInt(inputNumerator);
         const denominator = parseInt(inputDenominator);
+        let simpleNumerator;
+        let simpleDenominator;
         let percentage;
         let decimal;
 
@@ -38,27 +57,36 @@ window.onload = () => {
         // show btnAgain
         btnAgain.style.display = "block";
 
+        // call function twoNumGCD to set gcd variable
+        twoNumGCD(numerator, denominator);
+
+        // simplify fractions
+        simpleNumerator = numerator / gcd;
+        simpleDenominator = denominator / gcd;
+
         // calculate decimal and percentage
-        decimal = numerator / denominator;
+        decimal = simpleNumerator / simpleDenominator;
         decimalToFixed = decimal.toFixed(3);
         percentage = decimal * 100;
         percentageToFixed = percentage.toFixed(2);
 
         // output to outputAns
-        outputAns.innerHTML = `${numerator} in ${denominator} is:<ul><li>probability of ${decimalToFixed} or ${percentageToFixed}% chance</li><li>${numerator}-to-${denominator - numerator} odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
+        outputAns.innerHTML = `${numerator} in ${denominator} (${simpleNumerator}/${simpleDenominator}) is:<ul><li>probability of ${decimalToFixed} or ${percentageToFixed}% chance</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
 
-        // output-area: create circles based on user denominator input
-        for (let i = 0; i < (denominator - numerator); i++) {
-            let circle = document.createElement("div");
-            circle.className = "circle";
-            outputArea.appendChild(circle);
-        }
         // output-area: create circles based on user numerator input
-        for (let i = 0; i < numerator; i++) {
+        for (let i = 0; i < simpleNumerator; i++) {
             let circle = document.createElement("div");
             circle.className = "circle-red";
             outputArea.appendChild(circle);
         }
+
+        // output-area: create circles based on user denominator input
+        for (let i = 0; i < (simpleDenominator - simpleNumerator); i++) {
+            let circle = document.createElement("div");
+            circle.className = "circle";
+            outputArea.appendChild(circle);
+        }
+        
         // focus on btnAgain
         btnAgain.focus();
     }
