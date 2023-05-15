@@ -46,13 +46,6 @@ window.onload = () => {
             sourceURL: "https://www.thesprucepets.com/calico-cats-photo-gallery-4031810#:~:text=About%20one%20in%20every%203%2C000,of%20many%20other%20health%20problems."
         },
         {
-            desc: "Your chance of getting the Royal Flush hand in a game of Texas Hold'em is 1 in 649,740.",
-            numer: 1,
-            denom: 649740,
-            source: "Wikipedia",
-            sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
-        },
-        {
             desc: "By 2050, 1 in 4 people on Earth will be African.",
             numer: 1,
             denom: 4,
@@ -277,14 +270,14 @@ window.onload = () => {
         // output to outputAns
         outputAns.innerHTML = `${numerator} in ${denominator} ( ${simpleNumerator} / ${simpleDenominator} ) is:<ul><li>probability of ${decimalToFixed} or ${percentageToFixed}% chance</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} ( ${simpleNumerator} : ${simpleDenominator - simpleNumerator} ) odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
 
-        // output-area: create balls based on user numerator input
+        // output-area: create balls based on numerator
         for (let i = 0; i < simpleNumerator; i++) {
             let ball = document.createElement("div");
             ball.className = "ball-hit";
             outputArea.appendChild(ball);
         }
 
-        // output-area: create balls based on user denominator input
+        // output-area: create balls based on denominator less numerator
         for (let i = 0; i < (simpleDenominator - simpleNumerator); i++) {
             let ball = document.createElement("div");
             ball.className = "ball";
