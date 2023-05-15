@@ -124,7 +124,7 @@ h1,
 
 #question,
 #ans {
-   margin: 0.5rem 0; 
+   margin: 0.75rem 0; 
 }
 
 .txt-three-quarters {
@@ -142,7 +142,9 @@ h1,
 }
 
 #btn-submit,
-#btn-again {
+#btn-again,
+#btn-random {
+    display: inline-block;
     font-family: 'Neucha', Arial, sans-serif;
     font-size: 1rem;
     border: 0.125rem solid var(--color-primary);
@@ -150,6 +152,7 @@ h1,
     background-color: var(--color-primary);
     color: var(--color-secondary);
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 div.output-area {
@@ -169,14 +172,10 @@ div.output-area {
     border-radius: 50%;
     border: 1px solid var(--color-primary);
     margin: 0.2rem;
-    width: 1rem;
-    height: 1rem;
+    width: 0.75rem;
+    height: 0.75rem;
 }
 
 .ball-red {
     background-color: var(--color-tertiary);
-}
-
-#btn-again {
-    display: none;
 }
