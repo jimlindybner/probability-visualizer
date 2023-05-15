@@ -175,6 +175,9 @@ window.onload = () => {
         // clear outputArea
         outputArea.innerHTML = "";
 
+        // change refresh btn text
+        btnAgain.innerHTML = "Your Stat";
+
         // generate random num for funStats arr
         let randomNum = Math.floor(Math.random() * funStats.length);
 
