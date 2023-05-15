@@ -265,10 +265,10 @@ window.onload = () => {
         decimal = simpleNumerator / simpleDenominator;
         decimalToFixed = decimal.toFixed(3);
         percentage = decimal * 100;
-        percentageToFixed = percentage.toFixed(2);
+        percentageToFixed = percentage.toFixed(1);
 
         // output to outputAns
-        outputAns.innerHTML = `${numerator} in ${denominator} ( ${simpleNumerator} / ${simpleDenominator} ) is:<ul><li>probability of ${decimalToFixed} or ${percentageToFixed}% chance</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} ( ${simpleNumerator} : ${simpleDenominator - simpleNumerator} ) odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
+        outputAns.innerHTML = `${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator} : ${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
 
         // output-area: create balls based on numerator
         for (let i = 0; i < simpleNumerator; i++) {
