@@ -15,7 +15,8 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
-    const msgInputError = `There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.`;
+    const msgInputError1 = `There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.`;
+    const msgInputError2 = "The first number (numerator) cannot be greater than the second number (denominator).";
     let gcd;
 
     // focus on formNumerator on page load
@@ -238,12 +239,21 @@ window.onload = () => {
             }
             formNumerator.value = "";
             formNumerator.focus();
-            alert(msgInputError);
+            alert(msgInputError1);
             return false;
         } else if (inputDenominator === "" || inputDenominator === "0" || inputDenominator.includes(".") || inputDenominator.includes("-")) {
             formDenominator.value = "";
             formDenominator.focus();
-            alert(msgInputError);
+            alert(msgInputError1);
+            return false;
+        }
+
+        // form validation: if numerator is greater than denominator
+        if (numerator > denominator) {
+            formNumerator.value = "";
+            formDenominator.value = "";
+            formNumerator.focus();
+            alert(msgInputError2);
             return false;
         }
 
