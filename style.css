@@ -34,8 +34,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    max-width: 36rem;
-    margin: 0 auto;
 }
 ol, ul {
 	list-style: none;
@@ -90,8 +88,12 @@ footer {
 .footer-copy {
     display: inline-block;
     color: var(--color-secondary);
-    margin: 1rem;
+    margin: 2rem;
     line-height: 1.25;
+}
+
+.header-copy {
+    font-size: 1.25rem;
 }
 
 .copyright {
@@ -111,7 +113,7 @@ a:hover {
 }
 
 main {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 h1,
@@ -123,8 +125,10 @@ h1,
 }
 
 #question,
-#ans {
+#ans,
+#ans p {
    margin: 0.75rem 0; 
+   animation: fade-in 2s;
 }
 
 .txt-three-quarters {
@@ -157,7 +161,7 @@ h1,
 
 div.output-area {
     margin: 1rem 0;
-    height: 60vh;
+    height: 50vh;
     background-color: var(--color-secondary);
     display: flex;
     flex-flow: row wrap;
@@ -168,14 +172,24 @@ div.output-area {
 }
 
 .ball,
-.ball-red {
+.ball-hit {
     border-radius: 50%;
-    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
     margin: 0.2rem;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    animation: fade-in 2s;
 }
 
-.ball-red {
+.ball-hit {
     background-color: var(--color-tertiary);
+}
+
+.text-tertiary-color {
+    color: var(--color-tertiary);
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

@@ -18,6 +18,9 @@ window.onload = () => {
     const msgInputError = `There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.`;
     let gcd;
 
+    // focus on formNumerator on page load
+    formNumerator.focus();
+
     // random stats & facts
     let funStats = [];
     let handWash = {
@@ -45,7 +48,7 @@ window.onload = () => {
     }
 
     let royalFlush = {
-        desc: "Your chance of getting the Royal Flush hand in Texas Hold'em is 1 in 649,740.",
+        desc: "Your chance of getting the Royal Flush hand in a game of Texas Hold'em is 1 in 649,740.",
         numer: 1,
         denom: 649740,
         source: "Wikipedia",
@@ -53,7 +56,7 @@ window.onload = () => {
     }
 
     let african2050 = {
-        desc: "By 2050, 1 in 4 people on Earth will be African",
+        desc: "By 2050, 1 in 4 people on Earth will be African.",
         numer: 1,
         denom: 4,
         source: "CNBC",
@@ -61,7 +64,7 @@ window.onload = () => {
     }
 
     let englishLang = {
-        desc: "English is spoken by almost 1 out of every 5 people on Earth.",
+        desc: "English is spoken by about 1 in 5 people on Earth.",
         numer: 1,
         denom: 5,
         source: "CIA World Factbook",
@@ -69,7 +72,7 @@ window.onload = () => {
     }
 
     let mandarinLang = {
-        desc: "Mandarin is spoken by almost 7 out of every 50 people on Earth.",
+        desc: "Mandarin Chinese is spoken by almost 7 out of every 50 people on Earth.",
         numer: 7,
         denom: 50,
         source: "CIA World Factbook",
@@ -93,7 +96,7 @@ window.onload = () => {
     }
 
     let arabicLang = {
-        desc: "About 1 out of every 20 people on Earth speaks Arabic as their first language.",
+        desc: "About 1 in 20 people on Earth speaks Arabic as their first language.",
         numer: 1,
         denom: 20,
         source: "CIA World Factbook",
@@ -101,7 +104,7 @@ window.onload = () => {
     }
 
     let christianity = {
-        desc: "Nearly 1 out of every 3 people in the world is a Christian.",
+        desc: "About 1 in 3 people in the world is Christian.",
         numer: 1,
         denom: 3,
         source: "CIA World Factbook",
@@ -109,7 +112,7 @@ window.onload = () => {
     }
 
     let islam = {
-        desc: "Nearly 1 out of every 4 people in the world is a Muslim.",
+        desc: "About 1 in 4 people in the world is Muslim.",
         numer: 1,
         denom: 4,
         source: "CIA World Factbook",
@@ -125,15 +128,15 @@ window.onload = () => {
     }
 
     let urbanization = {
-        desc: "23 out of every 40 people on earth live in cities.",
-        numer: 23,
-        denom: 40,
+        desc: "Almost 3 in 5 people on earth live in cities.",
+        numer: 3,
+        denom: 5,
         source: "CIA World Factbook",
         sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society"
     }
 
     let children = {
-        desc: "Nearly 1 in every 4 people on earth is in the 0&ndash;14 years age range",
+        desc: "About 1 in 4 people on earth is in the 0&ndash;14 years age range",
         numer: 1,
         denom: 4,
         source: "CIA World Factbook",
@@ -141,7 +144,7 @@ window.onload = () => {
     }
 
     let primeAge = {
-        desc: "More than 1 in every 3 people on earth is in the 15&ndash;64 years age range",
+        desc: "More than 1 in 3 people on earth is in the 15&ndash;64 years age range",
         numer: 1,
         denom: 3,
         source: "CIA World Factbook",
@@ -149,7 +152,7 @@ window.onload = () => {
     }
 
     let seniorCitizens = {
-        desc: "About 1 in every 10 people on earth is older than 65.",
+        desc: "About 1 in 10 people on earth is older than 65.",
         numer: 1,
         denom: 10,
         source: "CIA World Factbook",
@@ -157,7 +160,7 @@ window.onload = () => {
     }
 
     let canadiansInOntario = {
-        desc: "Nearly 2 out of every 5 Canadians live in the province of Ontario.",
+        desc: "About 2 in 5 Canadians live in the province of Ontario.",
         numer: 2,
         denom: 5,
         source: "Google",
@@ -165,7 +168,7 @@ window.onload = () => {
     }
 
     let francophoneCanadians = {
-        desc: "In 2011, about every 3 in 10 Canadians spoke French.",
+        desc: "In 2011, about 3 in 10 Canadians spoke French.",
         numer: 3,
         denom: 10,
         source: "Wikipedia",
@@ -175,14 +178,9 @@ window.onload = () => {
     // adding random stat/fact objects to funStats arr
     funStats.push(handWash, twins, calicoMale, royalFlush, african2050, englishLang, mandarinLang, spanishLang, hindiLang, arabicLang, christianity, islam, hinduism, urbanization, children, primeAge, seniorCitizens, canadiansInOntario, francophoneCanadians);
 
-    // focus on formNumerator
-    formNumerator.focus();
-
     // functions
     // random stat
     let randomStat = () => {
-        console.log("random btn clicked");
-
         // hide question & btnSubmit
         question.style.display = "none";
         btnSubmit.style.display = "none";
@@ -194,12 +192,13 @@ window.onload = () => {
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p><p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
 
-        // clear output-area
+        // clear outputArea
         outputArea.innerHTML = "";
+        
         // output-area: create balls based on user numerator input
         for (let i = 0; i < funStats[randomNum].numer; i++) {
             let ball = document.createElement("div");
-            ball.className = "ball-red";
+            ball.className = "ball-hit";
             outputArea.appendChild(ball);
         }
 
@@ -282,7 +281,7 @@ window.onload = () => {
         // output-area: create balls based on user numerator input
         for (let i = 0; i < simpleNumerator; i++) {
             let ball = document.createElement("div");
-            ball.className = "ball-red";
+            ball.className = "ball-hit";
             outputArea.appendChild(ball);
         }
 
