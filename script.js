@@ -22,7 +22,6 @@ window.onload = () => {
     const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4 and so on).";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding."
-    let gcd;
 
     // focus on formNumerator on page load
     formNumerator.focus();
@@ -263,8 +262,7 @@ window.onload = () => {
             x = t;
         }
         
-        // assign gcd value
-        gcd = x;
+        return x;
     }
 
     // process form
@@ -281,6 +279,7 @@ window.onload = () => {
         let simpleDenominator;
         let percentage;
         let decimal;
+        let gcd;
 
         // form validation: if inputs are missing or not whole numbers
         if (inputNumerator === "" || inputNumerator === "0" || inputNumerator.includes(".") || inputNumerator.includes("-")) {
@@ -312,7 +311,7 @@ window.onload = () => {
         btnSubmit.style.display = "none";
 
         // call function twoNumGCD to set gcd variable
-        twoNumGCD(numerator, denominator);
+        gcd = twoNumGCD(numerator, denominator);
 
         // simplify fractions
         simpleNumerator = numerator / gcd;
