@@ -7,7 +7,7 @@ window.onload = () => {
 
     // form handles & variables
     const btnSubmit = document.querySelector("#btn-submit");
-    const btnReload = document.querySelector("#btn-again");
+    const btnReload = document.querySelector("#btn-reload");
     const btnRandom = document.querySelector("#btn-random");
     const outputArea = document.querySelector(".output-area");
     const question = document.querySelector("#question");
