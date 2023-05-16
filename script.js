@@ -217,18 +217,18 @@ window.onload = () => {
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
-        // output-area: create balls based on user numerator input
+        // output-area: create disks based on user numerator input
         for (let i = 0; i < funStats[randomNum].numer; i++) {
-            let ball = document.createElement("div");
-            ball.className = "ball-hit";
-            outputArea.appendChild(ball);
+            let disk = document.createElement("div");
+            disk.className = "disk-hit";
+            outputArea.appendChild(disk);
         }
 
-        // output-area: create balls based on user denominator input
+        // output-area: create disks based on user denominator input
         for (let i = 0; i < (funStats[randomNum].denom - funStats[randomNum].numer); i++) {
-            let ball = document.createElement("div");
-            ball.className = "ball";
-            outputArea.appendChild(ball);
+            let disk = document.createElement("div");
+            disk.className = "disk";
+            outputArea.appendChild(disk);
         }
     }
 
@@ -311,18 +311,18 @@ window.onload = () => {
         outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
         outputAns.innerHTML += `<div class="txt-three-quarters">${msgRoundedFigures}</div>`;
 
-        // output-area: create balls based on numerator
+        // output-area: create disks based on numerator
         for (let i = 0; i < simpleNumerator; i++) {
-            let ball = document.createElement("div");
-            ball.className = "ball-hit";
-            outputArea.appendChild(ball);
+            let disk = document.createElement("div");
+            disk.className = "disk-hit";
+            outputArea.appendChild(disk);
         }
 
-        // output-area: create balls based on denominator less numerator
+        // output-area: create disks based on denominator less numerator
         for (let i = 0; i < (simpleDenominator - simpleNumerator); i++) {
-            let ball = document.createElement("div");
-            ball.className = "ball";
-            outputArea.appendChild(ball);
+            let disk = document.createElement("div");
+            disk.className = "disk";
+            outputArea.appendChild(disk);
         }
 
         // focus on btnAgain

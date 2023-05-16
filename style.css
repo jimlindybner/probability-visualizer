@@ -173,8 +173,8 @@ div.output-area {
     padding: 1rem;
 }
 
-.ball,
-.ball-hit {
+.disk,
+.disk-hit {
     border-radius: 50%;
     background-color: var(--color-primary);
     margin: 0.2rem;
@@ -183,7 +183,7 @@ div.output-area {
     animation: fade-in 2s;
 }
 
-.ball-hit {
+.disk-hit {
     background-color: var(--color-tertiary);
 }
 
