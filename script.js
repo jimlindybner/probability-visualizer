@@ -156,6 +156,41 @@ window.onload = () => {
             denom: 25,
             source: "Google",
             sourceURL: "https://www.google.com/search?q=population+england&oq=population+England&aqs=chrome.0.0i512l10.2347j1j9&sourceid=chrome&ie=UTF-8"
+        },
+        {
+            desc: "Your chances of getting a straight flush in a game of poker is about 1 in 72,193.",
+            numer: 1,
+            denom: 72193,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
+        },
+        {
+            desc: "Your chances of getting four of a kind in a game of poker is about 1 in 4,166.",
+            numer: 1,
+            denom: 4166,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
+        },
+        {
+            desc: "Your chances of getting a full house in a game of poker is about 1 in 694.",
+            numer: 1,
+            denom: 694,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
+        },
+        {
+            desc: "Your chances of getting three of a kind in a game of poker is about 1 in 47.",
+            numer: 1,
+            denom: 47,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
+        },
+        {
+            desc: "Your chances of getting a two pair in a game of poker is about 1 in 21.",
+            numer: 1,
+            denom: 21,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
         }
     ];
 
@@ -176,7 +211,7 @@ window.onload = () => {
         let randomNum = Math.floor(Math.random() * funStats.length);
 
         // output to outputAns
-        outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p><p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
+        outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p><p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}-to-${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer} : ${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p><p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
         // output-area: create balls based on user numerator input
         for (let i = 0; i < funStats[randomNum].numer; i++) {
