@@ -17,7 +17,7 @@ window.onload = () => {
     const formDenominator = form.denominator;
     const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.";
     const msgInputError2 = "The first number (numerator) cannot be greater than the second number (denominator).";
-    const msgRoundedFigures = "Note: The above figures for probabilities and odds may have been rounded."
+    const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding."
     let gcd;
 
     // focus on formNumerator on page load
