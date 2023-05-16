@@ -213,7 +213,7 @@ window.onload = () => {
 
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
-        outputAns.innerHTML += `<p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}&#8209;to&#8209;${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer} : ${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p>`
+        outputAns.innerHTML += `<p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}&#8209;to&#8209;${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer}&nbsp;:&nbsp;${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
@@ -308,7 +308,7 @@ window.onload = () => {
 
         // output to outputAns
         outputAns.innerHTML = `<div>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</div>`
-        outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator} : ${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
+        outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
         outputAns.innerHTML += `<div class="txt-three-quarters">${msgRoundedFigures}</div>`;
 
         // output-area: create balls based on numerator
