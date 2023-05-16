@@ -7,7 +7,7 @@ window.onload = () => {
 
     // form handles & variables
     const btnSubmit = document.querySelector("#btn-submit");
-    const btnAgain = document.querySelector("#btn-again");
+    const btnReload = document.querySelector("#btn-again");
     const btnRandom = document.querySelector("#btn-random");
     const outputArea = document.querySelector(".output-area");
     const question = document.querySelector("#question");
@@ -223,7 +223,7 @@ window.onload = () => {
         outputArea.innerHTML = "";
 
         // change refresh btn text
-        btnAgain.innerHTML = "Your Stat";
+        btnReload.innerHTML = "Your Stat";
 
         // generate random num for funStats arr
         let randomNum = Math.floor(Math.random() * funStats.length);
@@ -328,8 +328,8 @@ window.onload = () => {
         // call visualization function
         visualize(simpleNumerator, simpleDenominator);
 
-        // focus on btnAgain
-        btnAgain.focus();
+        // focus on btnReload
+        btnReload.focus();
     }
 
     // refresh window function
@@ -337,8 +337,13 @@ window.onload = () => {
         window.location.reload();
     }
 
-    // event listener
+    // event listeners
+    // call calculate function when user submits form
     btnSubmit.addEventListener("click", calculate);
-    btnAgain.addEventListener("click", reloadWindow);
+    
+    // call reloadWindow function when user clicks refresh btn
+    btnReload.addEventListener("click", reloadWindow);
+    
+    // call randomStat function when user clicks random btn
     btnRandom.addEventListener("click", randomStat);
 }
