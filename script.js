@@ -15,8 +15,9 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
-    const msgInputError1 = `There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.`;
+    const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.";
     const msgInputError2 = "The first number (numerator) cannot be greater than the second number (denominator).";
+    const msgRoundedFigures = "Note: The above figures for probabilities and odds may have been rounded."
     let gcd;
 
     // focus on formNumerator on page load
@@ -213,7 +214,7 @@ window.onload = () => {
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
         outputAns.innerHTML += `<p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}-to-${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer} : ${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p>`
-        outputAns.innerHTML += `<p class="txt-three-quarters">(above figures may be approximates)</p>`
+        outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
         // output-area: create balls based on user numerator input
@@ -308,7 +309,7 @@ window.onload = () => {
         // output to outputAns
         outputAns.innerHTML = `<div>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</div>`
         outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator} : ${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
-        outputAns.innerHTML += `<div class="txt-three-quarters">(above figures may be approximates)</div>`;
+        outputAns.innerHTML += `<div class="txt-three-quarters">${msgRoundedFigures}</div>`;
 
         // output-area: create balls based on numerator
         for (let i = 0; i < simpleNumerator; i++) {
