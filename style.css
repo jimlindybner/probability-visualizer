@@ -58,7 +58,7 @@ table {
     --color-primary: #000;
     --color-secondary: #fff;
     --color-tertiary: #f00;
-    --color-quaternary: #ff3636;
+    --color-quaternary: #ff8c8c;
 }
 
 html {
@@ -111,6 +111,10 @@ a:hover {
     color: var(--color-quaternary);
 }
 
+a:active {
+    color: var(--bg-color);
+}
+
 main {
     margin: 2rem;
 }
@@ -146,9 +150,7 @@ h1,
     padding: 0 0.5rem;
 }
 
-#btn-submit,
-#btn-again,
-#btn-random {
+[id^="btn"] {
     display: inline-block;
     font-family: 'Neucha', Arial, sans-serif;
     font-size: 1rem;
@@ -158,6 +160,22 @@ h1,
     color: var(--color-secondary);
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+
+[id^="btn"]:hover {
+    background-color: var(--bg-color);
+    color: var(--color-primary);
+}
+
+#btn-random {
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    border: 0.125rem solid var(--color-tertiary);
+}
+
+#btn-random:hover {
+    background-color: var(--color-quaternary);
+    color: var(--color-primary);
 }
 
 div.output-area {
@@ -173,8 +191,7 @@ div.output-area {
     padding: 1rem;
 }
 
-.disk,
-.disk-hit {
+[class^="disk"] {
     border-radius: 50%;
     background-color: var(--color-primary);
     margin: 0.2rem;
