@@ -3,7 +3,11 @@ window.onload = () => {
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
     let copyYr = document.querySelector("#copy-yr");
-    copyYr.innerHTML = currentYr;
+    if (currentYr > 2023) {
+        copyYr.innerHTML = `2023 &ndash; ${currentYr}`;
+    } else {
+        copyYr.innerHTML = currentYr;
+    }
 
     // form handles & variables
     const btnSubmit = document.querySelector("#btn-submit");
