@@ -196,6 +196,23 @@ window.onload = () => {
     ];
 
     // functions
+    // visualization
+    let visualize = (numerator, denominator) => {
+        // output-area: create dots based on numerator
+        for (let i = 0; i < numerator; i++) {
+            let dot = document.createElement("div");
+            dot.className = "dot-hit";
+            outputArea.appendChild(dot);
+        }
+
+        // output-area: create dots based on denominator less numerator
+        for (let i = 0; i < (denominator - numerator); i++) {
+            let dot = document.createElement("div");
+            dot.className = "dot";
+            outputArea.appendChild(dot);
+        }
+    }
+
     // random stat
     let randomStat = () => {
         // hide question & btnSubmit
@@ -211,25 +228,22 @@ window.onload = () => {
         // generate random num for funStats arr
         let randomNum = Math.floor(Math.random() * funStats.length);
 
+        // variables
+        let randomStatNumer = funStats[randomNum].numer;
+        let randomStatDenom = funStats[randomNum].denom;
+        let randomStatProb = randomStatNumer / randomStatDenom;
+        let randomStatProbToFixed = (randomStatProb).toFixed(3);
+        let RandomStatPct = randomStatNumer / randomStatDenom * 100;
+        let randomStatPctToFixed = (RandomStatPct).toFixed(1);
+
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
-        outputAns.innerHTML += `<p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}&#8209;to&#8209;${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer}&nbsp;:&nbsp;${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p>`
+        outputAns.innerHTML += `<p>That's a probability of ${randomStatProbToFixed} (&nbsp;${randomStatPctToFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
-        // output-area: create disks based on user numerator input
-        for (let i = 0; i < funStats[randomNum].numer; i++) {
-            let disk = document.createElement("div");
-            disk.className = "disk-hit";
-            outputArea.appendChild(disk);
-        }
-
-        // output-area: create disks based on user denominator input
-        for (let i = 0; i < (funStats[randomNum].denom - funStats[randomNum].numer); i++) {
-            let disk = document.createElement("div");
-            disk.className = "disk";
-            outputArea.appendChild(disk);
-        }
+        // call visualization function
+        visualize(randomStatNumer, randomStatDenom);
     }
 
     // greatest common divisor
@@ -250,7 +264,7 @@ window.onload = () => {
     }
 
     // process form
-    let visualize = event => {
+    let calculate = event => {
         // prevent form submission
         event.preventDefault();
 
@@ -311,19 +325,8 @@ window.onload = () => {
         outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
         outputAns.innerHTML += `<div class="txt-three-quarters">${msgRoundedFigures}</div>`;
 
-        // output-area: create disks based on numerator
-        for (let i = 0; i < simpleNumerator; i++) {
-            let disk = document.createElement("div");
-            disk.className = "disk-hit";
-            outputArea.appendChild(disk);
-        }
-
-        // output-area: create disks based on denominator less numerator
-        for (let i = 0; i < (simpleDenominator - simpleNumerator); i++) {
-            let disk = document.createElement("div");
-            disk.className = "disk";
-            outputArea.appendChild(disk);
-        }
+        // call visualization function
+        visualize(simpleNumerator, simpleDenominator);
 
         // focus on btnAgain
         btnAgain.focus();
@@ -335,7 +338,7 @@ window.onload = () => {
     }
 
     // event listener
-    btnSubmit.addEventListener("click", visualize);
+    btnSubmit.addEventListener("click", calculate);
     btnAgain.addEventListener("click", reloadWindow);
     btnRandom.addEventListener("click", randomStat);
 }
