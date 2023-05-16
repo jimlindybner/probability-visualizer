@@ -9,7 +9,7 @@ window.onload = () => {
         copyYr.innerHTML = currentYr;
     }
 
-    // form handles & variables
+    // variables & form handles
     const btnSubmit = document.querySelector("#btn-submit");
     const btnReload = document.querySelector("#btn-reload");
     const btnRandom = document.querySelector("#btn-random");
@@ -19,8 +19,8 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
-    const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter whole numbers greater than 0.";
-    const msgInputError2 = "The first number (numerator) cannot be greater than the second number (denominator).";
+    const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4 and so on).";
+    const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding."
     let gcd;
 
