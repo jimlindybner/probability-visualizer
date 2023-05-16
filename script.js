@@ -211,7 +211,10 @@ window.onload = () => {
         let randomNum = Math.floor(Math.random() * funStats.length);
 
         // output to outputAns
-        outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p><p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}-to-${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer} : ${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p><p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
+        outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
+        outputAns.innerHTML += `<p>That's a probability of ${(funStats[randomNum].numer / funStats[randomNum].denom).toFixed(3)} (&nbsp;${(funStats[randomNum].numer / funStats[randomNum].denom * 100).toFixed(1)}% chance&nbsp;), or ${funStats[randomNum].numer}-to-${funStats[randomNum].denom - funStats[randomNum].numer} (&nbsp;${funStats[randomNum].numer} : ${funStats[randomNum].denom - funStats[randomNum].numer}&nbsp;) odds.</p>`
+        outputAns.innerHTML += `<p class="txt-three-quarters">(above figures may be approximates)</p>`
+        outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
         // output-area: create balls based on user numerator input
         for (let i = 0; i < funStats[randomNum].numer; i++) {
@@ -303,7 +306,9 @@ window.onload = () => {
         percentageToFixed = percentage.toFixed(1);
 
         // output to outputAns
-        outputAns.innerHTML = `${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator} : ${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul><div class="txt-three-quarters">(above figures may be approximates)</div>`;
+        outputAns.innerHTML = `<div>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</div>`
+        outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}-to-${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator} : ${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
+        outputAns.innerHTML += `<div class="txt-three-quarters">(above figures may be approximates)</div>`;
 
         // output-area: create balls based on numerator
         for (let i = 0; i < simpleNumerator; i++) {
