@@ -235,13 +235,13 @@ window.onload = () => {
         let randomStatNumer = funStats[randomNum].numer;
         let randomStatDenom = funStats[randomNum].denom;
         let randomStatProb = randomStatNumer / randomStatDenom;
-        let randomStatProbToFixed = (randomStatProb).toFixed(3);
+        let randomStatProbFixed = (randomStatProb).toFixed(3);
         let RandomStatPct = randomStatNumer / randomStatDenom * 100;
-        let randomStatPctToFixed = (RandomStatPct).toFixed(1);
+        let randomStatPctFixed = (RandomStatPct).toFixed(1);
 
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
-        outputAns.innerHTML += `<p>That's a probability of ${randomStatProbToFixed} (&nbsp;${randomStatPctToFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</p>`
+        outputAns.innerHTML += `<p>That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a></p>`;
         
@@ -319,14 +319,17 @@ window.onload = () => {
 
         // calculate decimal and percentage
         decimal = simpleNumerator / simpleDenominator;
-        decimalToFixed = decimal.toFixed(3);
+        decimalFixed = decimal.toFixed(3);
         percentage = decimal * 100;
-        percentageToFixed = percentage.toFixed(1);
+        percentageFixed = percentage.toFixed(1);
 
         // output to outputAns
-        outputAns.innerHTML = `<div>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</div>`
-        outputAns.innerHTML += `<ul><li>probability of ${decimalToFixed} (&nbsp;${percentageToFixed}% chance&nbsp;)</li><li>${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</li></ul>`
-        outputAns.innerHTML += `<div class="txt-three-quarters">${msgRoundedFigures}</div>`;
+        outputAns.innerHTML = `<p>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</p>`
+        outputAns.innerHTML += `<ul>`;
+        outputAns.innerHTML += `<li>a probability of ${decimalFixed} (&nbsp;${percentageFixed}% chance&nbsp;)</li>`;
+        outputAns.innerHTML += `<li>${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</li>`;
+        outputAns.innerHTML += `</ul>`;
+        outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`;
 
         // call visualization function
         visualize(simpleNumerator, simpleDenominator);
