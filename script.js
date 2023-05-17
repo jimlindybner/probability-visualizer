@@ -10,6 +10,7 @@ window.onload = () => {
     }
 
     // variables & form handles
+    const header = document.querySelector("header div.header-copy");
     const btnSubmit = document.querySelector("#btn-submit");
     const btnReload = document.querySelector("#btn-reload");
     const btnRandom = document.querySelector("#btn-random");
@@ -460,6 +461,9 @@ window.onload = () => {
     
     // call reloadWindow function when user clicks refresh btn
     btnReload.addEventListener("click", reloadWindow);
+
+    // call reload window function when user clicks on header text
+    header.addEventListener("click", reloadWindow);
     
     // call randomStat function when user clicks random btn
     btnRandom.addEventListener("click", randomStat);

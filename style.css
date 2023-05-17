@@ -95,6 +95,10 @@ footer {
     font-size: 1.25rem;
 }
 
+header div.header-copy {
+    cursor: pointer;
+}
+
 .copyright {
     margin-top: 1rem;
 }
