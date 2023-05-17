@@ -238,6 +238,13 @@ window.onload = () => {
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
         },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from a \"motor-vehicle crash\" is 1 in 93.",
+            numer: 1,
+            denom: 93,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        }
     ];
 
     // functions
