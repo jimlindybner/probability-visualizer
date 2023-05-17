@@ -15,7 +15,6 @@ window.onload = () => {
     const btnReload = document.querySelector("#btn-reload");
     const btnRandom = document.querySelector("#btn-random");
     const outputArea = document.querySelector(".output-area");
-    const question = document.querySelector("#question");
     const outputAns = document.querySelector("#ans");
     const form = document.visualization_form;
     const formNumerator = form.numerator;
@@ -323,9 +322,8 @@ window.onload = () => {
 
     // random stat
     let randomStat = () => {
-        // hide question & btnSubmit
-        question.style.display = "none";
-        btnSubmit.style.display = "none";
+        // hide form
+        form.style.display = "none";
 
         // clear outputArea
         outputArea.innerHTML = "";
@@ -418,9 +416,8 @@ window.onload = () => {
             return false;
         }
 
-        // hide question & btnSubmit
-        question.style.display = "none";
-        btnSubmit.style.display = "none";
+        // hide form
+        form.style.display = "none";
 
         // call function twoNumGCD to set gcd variable
         gcd = twoNumGCD(numerator, denominator);
