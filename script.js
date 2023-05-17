@@ -202,7 +202,42 @@ window.onload = () => {
             denom: 44945,
             source: "The Hive Law",
             sourceURL: "https://www.thehivelaw.com/blog/how-often-do-planes-crash-statistics-how-many-planes-crash-a-year/#:~:text=Let's%20look%20at%20how%20many,119.6%20planes%20crash%20per%20week."
-        }
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from \"choking on food\" is 1 in 2,659.",
+            numer: 1,
+            denom: 2659,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from a \"cataclysmic storm\" is 1 in 20,098.",
+            numer: 1,
+            denom: 20098,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from an \"accidental gun discharge\" is 1 in 7,944.",
+            numer: 1,
+            denom: 7944,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from \"hornet, wasp and bee stings\" is 1 in 54,516.",
+            numer: 1,
+            denom: 54516,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from a \"dog attack\" is 1 in 53,843.",
+            numer: 1,
+            denom: 53843,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
     ];
 
     // functions
