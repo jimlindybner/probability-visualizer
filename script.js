@@ -278,7 +278,9 @@ window.onload = () => {
         let simpleNumerator;
         let simpleDenominator;
         let percentage;
+        let percentageFixed;
         let decimal;
+        let decimalFixed;
         let gcd;
 
         // form validation: if inputs are missing or not whole numbers
