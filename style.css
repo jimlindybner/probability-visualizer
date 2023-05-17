@@ -205,8 +205,8 @@ div.output-area {
     border-radius: 50%;
     background-color: var(--color-primary);
     margin: 0.2rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
     animation: fade-in 2s;
 }
 
