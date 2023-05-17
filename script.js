@@ -244,6 +244,27 @@ window.onload = () => {
             denom: 93,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from \"drowning\" is 1 in 1,006.",
+            numer: 1,
+            denom: 1006,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from \"fire or smoke\" is 1 in 1,287.",
+            numer: 1,
+            denom: 1287,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
+        },
+        {
+            desc: "According to the US National Safety Council, the odds of dying from \"sharp objects\" is 1 in 25,960.",
+            numer: 1,
+            denom: 25960,
+            source: "National Safety Council",
+            sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/"
         }
     ];
 
