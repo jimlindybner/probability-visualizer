@@ -195,6 +195,13 @@ window.onload = () => {
             denom: 21,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Poker_probability"
+        },
+        {
+            desc: "In the US, on average, there are about 4 airplane crashes (not all of which are fatal) per day, out of 44,945 flights.",
+            numer: 4,
+            denom: 44945,
+            source: "The Hive Law",
+            sourceURL: "https://www.thehivelaw.com/blog/how-often-do-planes-crash-statistics-how-many-planes-crash-a-year/#:~:text=Let's%20look%20at%20how%20many,119.6%20planes%20crash%20per%20week."
         }
     ];
 
