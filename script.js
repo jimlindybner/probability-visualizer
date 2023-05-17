@@ -342,12 +342,16 @@ window.onload = () => {
         let randomStatProbFixed = (randomStatProb).toFixed(3);
         let RandomStatPct = randomStatNumer / randomStatDenom * 100;
         let randomStatPctFixed = (RandomStatPct).toFixed(1);
+        let retrievalYear = funStats[randomNum].retrieveDate.getFullYear();
+        let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let retrievalMonth = funStats[randomNum].retrieveDate.getMonth();
+        let retrievalDate = funStats[randomNum].retrieveDate.getDate() + 1;
 
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
         outputAns.innerHTML += `<p>That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
-        outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}.</a> (Retrieved on ${funStats[randomNum].retrieveDate})</p>`;
+        outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> <span class="txt-three-quarters">(retrieved on ${retrievalDate} ${monthNames[retrievalMonth]} ${retrievalYear})</span>.</p>`;
         
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
