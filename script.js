@@ -34,7 +34,7 @@ window.onload = () => {
             denom: 5,
             source: "Making Numbers Count: The Art and Science of Communicating Numbers",
             sourceURL: "https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "Naturally, twins occur in about 1 in 250 pregnancies",
@@ -42,7 +42,7 @@ window.onload = () => {
             denom: 250,
             source: "ReproductiveFacts.org",
             sourceURL: "https://www.reproductivefacts.org/news-and-publications/patient-fact-sheets-and-booklets/documents/fact-sheets-and-info-booklets/multiple-pregnancy-and-birth-twins-triplets-and-high-order-multiples-booklet/#:~:text=Naturally%2C%20twins%20occur%20in%20about,but%20there%20are%20other%20factors.",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 1 in every 3,000 calico cats is born a male.",
@@ -50,7 +50,7 @@ window.onload = () => {
             denom: 3000,
             source: "The Spruce Pets",
             sourceURL: "https://www.thesprucepets.com/calico-cats-photo-gallery-4031810#:~:text=About%20one%20in%20every%203%2C000,of%20many%20other%20health%20problems.",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "By 2050, 1 in 4 people on Earth will be African.",
@@ -58,7 +58,7 @@ window.onload = () => {
             denom: 4,
             source: "CNBC",
             sourceURL: "https://www.cnbc.com/2015/07/30/world-population-quarter-of-earth-will-be-african-in-2050.html",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "English is spoken by about 1 in 5 people on Earth.",
@@ -66,7 +66,7 @@ window.onload = () => {
             denom: 5,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "Mandarin Chinese is spoken by almost 7 out of every 50 people on Earth.",
@@ -74,7 +74,7 @@ window.onload = () => {
             denom: 50,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "Hindi is spoken by 3 out of every 40 people on Earth.",
@@ -82,7 +82,7 @@ window.onload = () => {
             denom: 40,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "Spanish is spoken by almost 7 out of every 100 people on Earth.",
@@ -90,7 +90,7 @@ window.onload = () => {
             denom: 100,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 1 in 20 people on Earth speaks Arabic as their first language.",
@@ -98,7 +98,7 @@ window.onload = () => {
             denom: 20,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 1 in 3 people in the world is Christian.",
@@ -106,7 +106,7 @@ window.onload = () => {
             denom: 3,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 1 in 4 people in the world is Muslim.",
@@ -114,7 +114,7 @@ window.onload = () => {
             denom: 4,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 3 out of every 20 people in the world are Hindus.",
@@ -122,7 +122,7 @@ window.onload = () => {
             denom: 20,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "Almost 3 in 5 people on earth live in cities.",
@@ -130,7 +130,7 @@ window.onload = () => {
             denom: 5,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 1 in 4 people on earth is in the 0&ndash;14 years age range",
@@ -138,7 +138,7 @@ window.onload = () => {
             denom: 4,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "More than 1 in 3 people on earth is in the 15&ndash;64 years age range",
@@ -146,7 +146,7 @@ window.onload = () => {
             denom: 3,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 1 in 10 people on earth is older than 65.",
@@ -154,7 +154,7 @@ window.onload = () => {
             denom: 10,
             source: "CIA World Factbook",
             sourceURL: "https://www.cia.gov/the-world-factbook/countries/world/#people-and-society",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 2 in 5 Canadians live in the province of Ontario.",
@@ -162,7 +162,7 @@ window.onload = () => {
             denom: 5,
             source: "Google",
             sourceURL: "https://www.google.com/search?q=ontario+population&oq=ontario+population&aqs=chrome.0.0i67i433i650j0i67i650j0i131i433i512j0i512l2j69i64j0i512l2.1853j1j4&sourceid=chrome&ie=UTF-8",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "In 2011, about 3 in 10 Canadians spoke French.",
@@ -170,7 +170,7 @@ window.onload = () => {
             denom: 10,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Francophone_Canadians",
-            retrieveDate: new Date("2023-05-14")
+            retrieveDate: "2023-05-14"
         },
         {
             desc: "About 21 out of 25 Brits live in England.",
@@ -178,7 +178,7 @@ window.onload = () => {
             denom: 25,
             source: "Google",
             sourceURL: "https://www.google.com/search?q=population+england&oq=population+England&aqs=chrome.0.0i512l10.2347j1j9&sourceid=chrome&ie=UTF-8",
-            retrieveDate: new Date("2023-05-15")
+            retrieveDate: "2023-05-15"
         },
         {
             desc: "Your chances of getting a straight flush in a game of poker is about 1 in 72,193.",
@@ -186,7 +186,7 @@ window.onload = () => {
             denom: 72193,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Poker_probability",
-            retrieveDate: new Date("2023-05-15")
+            retrieveDate: "2023-05-15"
         },
         {
             desc: "Your chances of getting four of a kind in a game of poker is about 1 in 4,166.",
@@ -194,7 +194,7 @@ window.onload = () => {
             denom: 4166,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Poker_probability",
-            retrieveDate: new Date("2023-05-15")
+            retrieveDate: "2023-05-15"
         },
         {
             desc: "Your chances of getting a full house in a game of poker is about 1 in 694.",
@@ -202,7 +202,7 @@ window.onload = () => {
             denom: 694,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Poker_probability",
-            retrieveDate: new Date("2023-05-15")
+            retrieveDate: "2023-05-15"
         },
         {
             desc: "Your chances of getting three of a kind in a game of poker is about 1 in 47.",
@@ -210,7 +210,7 @@ window.onload = () => {
             denom: 47,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Poker_probability",
-            retrieveDate: new Date("2023-05-15")
+            retrieveDate: "2023-05-15"
         },
         {
             desc: "Your chances of getting a two pair in a game of poker is about 1 in 21.",
@@ -218,7 +218,7 @@ window.onload = () => {
             denom: 21,
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Poker_probability",
-            retrieveDate: new Date("2023-05-15")
+            retrieveDate: "2023-05-15"
         },
         {
             desc: "In the US, on average, there are about 4 airplane crashes (not all of which are fatal) per day, out of 44,945 flights.",
@@ -226,7 +226,7 @@ window.onload = () => {
             denom: 44945,
             source: "The Hive Law",
             sourceURL: "https://www.thehivelaw.com/blog/how-often-do-planes-crash-statistics-how-many-planes-crash-a-year/#:~:text=Let's%20look%20at%20how%20many,119.6%20planes%20crash%20per%20week.",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from \"choking on food\" is 1 in 2,659.",
@@ -234,7 +234,7 @@ window.onload = () => {
             denom: 2659,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from a \"cataclysmic storm\" is 1 in 20,098.",
@@ -242,7 +242,7 @@ window.onload = () => {
             denom: 20098,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from an \"accidental gun discharge\" is 1 in 7,944.",
@@ -250,7 +250,7 @@ window.onload = () => {
             denom: 7944,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from \"hornet, wasp and bee stings\" is 1 in 54,516.",
@@ -258,7 +258,7 @@ window.onload = () => {
             denom: 54516,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from a \"dog attack\" is 1 in 53,843.",
@@ -266,7 +266,7 @@ window.onload = () => {
             denom: 53843,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from a \"motor-vehicle crash\" is 1 in 93.",
@@ -274,7 +274,7 @@ window.onload = () => {
             denom: 93,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from \"drowning\" is 1 in 1,006.",
@@ -282,7 +282,7 @@ window.onload = () => {
             denom: 1006,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from \"fire or smoke\" is 1 in 1,287.",
@@ -290,7 +290,7 @@ window.onload = () => {
             denom: 1287,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         },
         {
             desc: "According to the US National Safety Council, the odds of dying from \"sharp objects\" is 1 in 25,960.",
@@ -298,7 +298,7 @@ window.onload = () => {
             denom: 25960,
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
-            retrieveDate: new Date("2023-05-16")
+            retrieveDate: "2023-05-16"
         }
     ];
 
@@ -342,16 +342,17 @@ window.onload = () => {
         let randomStatProbFixed = (randomStatProb).toFixed(3);
         let RandomStatPct = randomStatNumer / randomStatDenom * 100;
         let randomStatPctFixed = (RandomStatPct).toFixed(1);
-        let retrievalYear = funStats[randomNum].retrieveDate.getFullYear();
+        let retrievalDate = new Date(funStats[randomNum].retrieveDate);
+        let outputYear = retrievalDate.getFullYear();
         let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        let retrievalMonth = funStats[randomNum].retrieveDate.getMonth();
-        let retrievalDate = funStats[randomNum].retrieveDate.getDate() + 1;
+        let outputMonth = retrievalDate.getMonth();
+        let outputDate = retrievalDate.getDate() + 1;
 
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
         outputAns.innerHTML += `<p>That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
-        outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> <span class="txt-three-quarters">(retrieved on ${retrievalDate} ${monthNames[retrievalMonth]} ${retrievalYear})</span>.</p>`;
+        outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> <span class="txt-three-quarters">(retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
         
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
