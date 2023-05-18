@@ -1,6 +1,4 @@
-window.onload = pageReady;
-
-let pageReady = () => {
+window.onload = () => {
     // footer: copyright year
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
@@ -23,7 +21,7 @@ let pageReady = () => {
     const formDenominator = form.denominator;
     const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4 and so on).";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
-    const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding.";
+    const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding."
 
     // focus on formNumerator on page load
     formNumerator.focus();
@@ -306,7 +304,7 @@ let pageReady = () => {
 
     // functions
     // visualization
-    function visualize(numerator, denominator) {
+    let visualize = (numerator, denominator) => {
         // output-area: create dots based on numerator
         for (let i = 0; i < numerator; i++) {
             let dot = document.createElement("div");
@@ -323,7 +321,7 @@ let pageReady = () => {
     }
 
     // random stat
-    function randomStat() {
+    let randomStat = () => {
         // hide form
         form.style.display = "none";
 
@@ -354,13 +352,13 @@ let pageReady = () => {
         outputAns.innerHTML += `<p><span class="text-tertiary-color">That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</span></p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> <span class="txt-three-quarters">(retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
-
+        
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
     }
 
     // greatest common divisor
-    function twoNumGCD(x, y) {
+    let twoNumGCD = (x, y) => {
         if ((typeof x !== "number") || (typeof y !== "number")) {
             return false;
         }
@@ -371,12 +369,12 @@ let pageReady = () => {
             y = x % y;
             x = t;
         }
-
+        
         return x;
     }
 
     // process form
-    function calculate(event) {
+    let calculate = event => {
         // prevent form submission
         event.preventDefault();
 
@@ -450,20 +448,20 @@ let pageReady = () => {
     }
 
     // refresh window function
-    function reloadWindow() {
+    let reloadWindow = () => {
         window.location.reload();
     }
 
     // event listeners
     // call calculate function when user submits form
     btnSubmit.addEventListener("click", calculate);
-
+    
     // call reloadWindow function when user clicks refresh btn
     btnReload.addEventListener("click", reloadWindow);
 
     // call reload window function when user clicks on header text
     header.addEventListener("click", reloadWindow);
-
+    
     // call randomStat function when user clicks random btn
     btnRandom.addEventListener("click", randomStat);
 }
