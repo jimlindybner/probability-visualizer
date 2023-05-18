@@ -1,4 +1,7 @@
-window.onload = () => {
+window.onload = pageReady;
+
+// pageReady function to be called on page load
+function pageReady() {
     // footer: copyright year
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
@@ -21,7 +24,7 @@ window.onload = () => {
     const formDenominator = form.denominator;
     const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4 and so on).";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
-    const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding."
+    const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding.";
 
     // focus on formNumerator on page load
     formNumerator.focus();
@@ -302,9 +305,9 @@ window.onload = () => {
         }
     ];
 
-    // functions
+    // FUNCTIONS
     // visualization
-    let visualize = (numerator, denominator) => {
+    function visualize(numerator, denominator) {
         // output-area: create dots based on numerator
         for (let i = 0; i < numerator; i++) {
             let dot = document.createElement("div");
@@ -321,7 +324,7 @@ window.onload = () => {
     }
 
     // random stat
-    let randomStat = () => {
+    function randomStat() {
         // hide form
         form.style.display = "none";
 
@@ -358,8 +361,8 @@ window.onload = () => {
     }
 
     // greatest common divisor
-    let twoNumGCD = (x, y) => {
-        if ((typeof x !== 'number') || (typeof y !== 'number')) {
+    function twoNumGCD(x, y) {
+        if ((typeof x !== "number") || (typeof y !== "number")) {
             return false;
         }
         x = Math.abs(x);
@@ -374,7 +377,7 @@ window.onload = () => {
     }
 
     // process form
-    let calculate = event => {
+    function calculate(event) {
         // prevent form submission
         event.preventDefault();
 
@@ -448,11 +451,11 @@ window.onload = () => {
     }
 
     // refresh window function
-    let reloadWindow = () => {
+    function reloadWindow() {
         window.location.reload();
     }
 
-    // event listeners
+    // EVENT LISTENERS
     // call calculate function when user submits form
     btnSubmit.addEventListener("click", calculate);
     
