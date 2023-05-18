@@ -1,7 +1,6 @@
 window.onload = pageReady;
 
-// pageReady function to be called on page load
-function pageReady() {
+let pageReady = () => {
     // footer: copyright year
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
@@ -305,7 +304,7 @@ function pageReady() {
         }
     ];
 
-    // FUNCTIONS
+    // functions
     // visualization
     function visualize(numerator, denominator) {
         // output-area: create dots based on numerator
@@ -355,7 +354,7 @@ function pageReady() {
         outputAns.innerHTML += `<p><span class="text-tertiary-color">That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</span></p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> <span class="txt-three-quarters">(retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
-        
+
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
     }
@@ -372,7 +371,7 @@ function pageReady() {
             y = x % y;
             x = t;
         }
-        
+
         return x;
     }
 
@@ -455,16 +454,16 @@ function pageReady() {
         window.location.reload();
     }
 
-    // EVENT LISTENERS
+    // event listeners
     // call calculate function when user submits form
     btnSubmit.addEventListener("click", calculate);
-    
+
     // call reloadWindow function when user clicks refresh btn
     btnReload.addEventListener("click", reloadWindow);
 
     // call reload window function when user clicks on header text
     header.addEventListener("click", reloadWindow);
-    
+
     // call randomStat function when user clicks random btn
     btnRandom.addEventListener("click", randomStat);
 }
