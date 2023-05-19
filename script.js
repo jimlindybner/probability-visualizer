@@ -435,7 +435,7 @@ window.onload = () => {
         // output to outputAns
         outputAns.innerHTML = `<p>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</p>`
         outputAns.innerHTML += `<ul>`;
-        outputAns.innerHTML += `<li><span class="text-tertiary-color">a probability of ${decimalFixed} (&nbsp;${percentageFixed}% chance&nbsp;)</span<</li>`;
+        outputAns.innerHTML += `<li><span class="text-tertiary-color">a probability of ${decimalFixed} (&nbsp;${percentageFixed}% chance&nbsp;)</span></li>`;
         outputAns.innerHTML += `<li><span class="text-tertiary-color">${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</span></li>`;
         outputAns.innerHTML += `</ul>`;
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`;
