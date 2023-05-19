@@ -54,7 +54,6 @@ table {
 
 /* Defaults */
 :root {
-    --bg-color: #d9d9d9;
     --color-primary: #000;
     --color-secondary: #fff;
     --color-tertiary: #f00;
@@ -64,7 +63,7 @@ table {
 html {
     font-family: 'Neucha', Arial, sans-serif;
     font-size: 16px;
-    background-color: var(--bg-color);
+    background-color: var(--color-secondary);
 }
 
 ul {
@@ -141,6 +140,10 @@ h1,
    animation: fade-in 2s;
 }
 
+#question {
+   line-height: 1.5;
+}
+
 .txt-three-quarters {
     font-size: 0.75em;
 }
@@ -149,10 +152,11 @@ h1,
 #denominator {
     border: none;
     border-radius: 0.25rem;
-    text-align: right;
-    width: 3.25rem;
-    height: 1.25rem;
+    border: 0.125em solid var(--color-primary);
+    width: 5rem;
+    height: 1.5rem;
     padding: 0 0.5rem;
+    text-align: center;
 }
 
 [id^="btn"] {
@@ -169,7 +173,7 @@ h1,
 }
 
 [id^="btn"]:hover {
-    background-color: var(--bg-color);
+    background-color: var(--color-secondary);
     color: var(--color-primary);
 }
 
@@ -194,7 +198,7 @@ h1,
 
 div.output-area {
     margin: 1rem 0;
-    height: 50vh;
+    height: 35vh;
     background-color: var(--color-secondary);
     display: flex;
     flex-flow: row wrap;
