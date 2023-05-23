@@ -35,27 +35,27 @@
             <button id="btn-random" class="page-top__btn">Random Stat</button>
             <button id="btn-reload" class="page-top__btn">Refresh</button>
         </div>
-        <div id="ans"></div>
-        <form action="#" method="get" name="visualization_form">
-            <div id="question">
+        <form action="#" method="get" name="visualization_form" class="form">
+            <div id="question" class="form__question">
                 What does an "x-in-y probability" look like?
             </div>
-            <div id="numerator-denominator-block">
-                <div id="numerator-block">
+            <div id="numerator-denominator-block" class="form__fraction">
+                <div id="numerator-block" class="form__fraction-numerator">
                     <label for="numerator">Numerator =</label>
                     <input type="number" name="numerator" id="numerator" min="1" placeholder="x">
                 </div>
                 <hr>
-                <div id="denominator-block">
+                <div id="denominator-block" class="form__fraction-denominator">
                     <label for="denominator">Denominator =</label>
                     <input type="number" name="denominator" id="denominator" min="1" placeholder="y">
                 </div>
             </div>
             <div>
-                <button type="submit" id="btn-submit">Visualize</button>
+                <button type="submit" id="btn-submit" class="form__submit">Visualize</button>
             </div>
         </form>
-        <div class="output-area"></div>
+        <div id="ans" class="output__text"></div>
+        <div class="output-area output__dots-container"></div>
     </main>
     <footer>
         <div class="footer-copy">
