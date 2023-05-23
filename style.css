@@ -159,6 +159,20 @@ h1,
     text-align: center;
 }
 
+#numerator-denominator-block {
+    margin: 1rem auto;
+}
+
+#numerator-block,
+#denominator-block {
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid var(--color-primary);
+}
+
 [id^="btn"] {
     display: inline-block;
     font-family: 'Neucha', Arial, sans-serif;
@@ -232,7 +246,6 @@ div.output-area {
 }
 
 @media screen and (min-width: 576px) {
-    
     html {
         font-size: 1.25rem;
     }
@@ -240,5 +253,12 @@ div.output-area {
     main {
         width: 75%;
         margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #numerator-denominator-block {
+        margin: 1rem 0;
+        width: 50%;
     }
 }

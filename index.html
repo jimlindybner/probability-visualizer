@@ -38,11 +38,18 @@
         <div id="ans"></div>
         <form action="#" method="get" name="visualization_form">
             <div id="question">
-                What does &ldquo;
-                <input type="number" name="numerator" id="numerator" min="1" placeholder="numerator">
-                -in-
-                <input type="number" name="denominator" id="denominator" min="1" placeholder="denominator">
-                probability&rdquo; look&nbsp;like?
+                Help me visualize the probability and odds for:
+                <div id="numerator-denominator-block">
+                    <div id="numerator-block">
+                        <label for="numerator">Numerator =</label>
+                        <input type="number" name="numerator" id="numerator" min="1" placeholder="x">
+                    </div>
+                    <hr>
+                    <div id="denominator-block">
+                        <label for="denominator">Denominator =</label>
+                        <input type="number" name="denominator" id="denominator" min="1" placeholder="y">
+                    </div>
+                </div>
             </div>
             <div>
                 <button type="submit" id="btn-submit">Visualize</button>
