@@ -260,5 +260,6 @@ div.output-area {
     #numerator-denominator-block {
         margin: 1rem 0;
         width: 50%;
+        padding-left: 5rem;
     }
 }
