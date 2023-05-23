@@ -19,7 +19,7 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
-    const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, etc.) up to 300,000.";
+    const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4, etc.) up to 100,000.";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding.";
 
@@ -391,16 +391,16 @@ window.onload = () => {
         let decimalFixed;
         let gcd;
 
-        // form validation: if inputs are missing, not whole numbers or greater than 300,000
-        if (inputNumerator === "" || inputNumerator === "0" || inputNumerator.includes(".") || inputNumerator.includes("-") || numerator > 300000) {
-            if (inputDenominator === "" || inputDenominator === "0" || inputDenominator.includes(".") || inputDenominator.includes("-") || denominator > 300000) {
+        // form validation: if inputs are missing, not whole numbers or greater than 100,000
+        if (inputNumerator === "" || inputNumerator === "0" || inputNumerator.includes(".") || inputNumerator.includes("-") || numerator > 100000) {
+            if (inputDenominator === "" || inputDenominator === "0" || inputDenominator.includes(".") || inputDenominator.includes("-") || denominator > 100000) {
                 formDenominator.value = "";
             }
             formNumerator.value = "";
             formNumerator.focus();
             alert(msgInputError1);
             return false;
-        } else if (inputDenominator === "" || inputDenominator === "0" || inputDenominator.includes(".") || inputDenominator.includes("-") || denominator > 300000) {
+        } else if (inputDenominator === "" || inputDenominator === "0" || inputDenominator.includes(".") || inputDenominator.includes("-") || denominator > 100000) {
             formDenominator.value = "";
             formDenominator.focus();
             alert(msgInputError1);
