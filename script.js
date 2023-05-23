@@ -229,7 +229,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from \"choking on food\" is 1 in 2,659.",
+            desc: "According to the National Safety Council, your chance of dying from \"choking on food\" in the US is 1 in 2,659.",
             numer: 1,
             denom: 2659,
             source: "National Safety Council",
@@ -237,7 +237,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from a \"cataclysmic storm\" is 1 in 20,098.",
+            desc: "According to the National Safety Council, your chance of dying from a \"cataclysmic storm\" in the US is 1 in 20,098.",
             numer: 1,
             denom: 20098,
             source: "National Safety Council",
@@ -245,7 +245,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from an \"accidental gun discharge\" is 1 in 7,944.",
+            desc: "According to the National Safety Council, your chance of dying from an \"accidental gun discharge\" in the US is 1 in 7,944.",
             numer: 1,
             denom: 7944,
             source: "National Safety Council",
@@ -253,7 +253,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from \"hornet, wasp and bee stings\" is 1 in 54,516.",
+            desc: "According to the National Safety Council, your chance of dying from \"hornet, wasp and bee stings\" in the US is 1 in 54,516.",
             numer: 1,
             denom: 54516,
             source: "National Safety Council",
@@ -261,7 +261,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from a \"dog attack\" is 1 in 53,843.",
+            desc: "According to the National Safety Council, your chance of dying from a \"dog attack\" in the US is 1 in 53,843.",
             numer: 1,
             denom: 53843,
             source: "National Safety Council",
@@ -269,7 +269,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from a \"motor-vehicle crash\" is 1 in 93.",
+            desc: "According to the National Safety Council, your chance of dying from a \"motor-vehicle crash\" in the US is 1 in 93.",
             numer: 1,
             denom: 93,
             source: "National Safety Council",
@@ -277,7 +277,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from \"drowning\" is 1 in 1,006.",
+            desc: "According to the National Safety Council, your chance of dying from \"drowning\" in the US is 1 in 1,006.",
             numer: 1,
             denom: 1006,
             source: "National Safety Council",
@@ -285,7 +285,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from \"fire or smoke\" is 1 in 1,287.",
+            desc: "According to the National Safety Council, your chance of dying from \"fire or smoke\" in the US is 1 in 1,287.",
             numer: 1,
             denom: 1287,
             source: "National Safety Council",
@@ -293,7 +293,7 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "According to the US National Safety Council, the odds of dying from \"sharp objects\" is 1 in 25,960.",
+            desc: "According to the National Safety Council, your chance of dying from \"sharp objects\" in the US is 1 in 25,960.",
             numer: 1,
             denom: 25960,
             source: "National Safety Council",
