@@ -295,14 +295,18 @@ window.onload = () => {
     // functions
     // keyDown handler
     let keyDownHandler = () => {
-        // get input values for numerator and denominator
-        const inputNumerator = formNumerator.value;
-        const inputDenominator = formDenominator.value;
-
-        // clear x and y
+        // variables and handles
+        let inputNumerator;
+        let inputDenominator;
         let x = document.querySelector(".question__x");
         let y = document.querySelector(".question__y");
+        let aAn = document.querySelector(".question__aan");
 
+        // get input values for numerator and denominator
+        inputNumerator = formNumerator.value;
+        inputDenominator = formDenominator.value;
+
+        // clear x and y
         x.innerHTML = "";
         y.innerHTML = "";
 
@@ -319,6 +323,12 @@ window.onload = () => {
             y.innerHTML = inputDenominator;
         }
 
+        // change a to an if numerator = 11, 18, starts with 8
+        if (inputNumerator === "11" || inputNumerator === "18" || inputNumerator === "8" || inputNumerator.startsWith("8")) {
+            aAn.innerHTML = "an";
+        } else {
+            aAn.innerHTML = "a";
+        }
     }
 
     // visualization
