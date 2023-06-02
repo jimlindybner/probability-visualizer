@@ -32,22 +32,22 @@
     <main>
         <h1 class="page-top__h1">Visualize <span class="text-tertiary-color">Your Odds</span>!</h1>
         <div>
-            <button id="btn-random" class="page-top__btn">Random Stat</button>
-            <button id="btn-reload" class="page-top__btn">Refresh</button>
+            <button id="btn-random" class="page-top__btn-random">Random Stat</button>
+            <button id="btn-reload" class="page-top__btn-reload">Refresh</button>
         </div>
         <form action="#" method="get" name="visualization_form" class="form">
             <div id="question" class="form__question">
                 What does an "x-in-y probability" look like?
             </div>
             <div id="numerator-denominator-block" class="fraction">
-                <div id="numerator-block" class="fraction__numerator">
-                    <label for="numerator">Numerator =</label>
-                    <input type="number" name="numerator" id="numerator" min="1" placeholder="x">
+                <div id="numerator-block" class="fraction__numerator numerator">
+                    <label for="numerator" class="numerator__label">Numerator =</label>
+                    <input type="number" name="numerator" class="numerator__input" id="numerator" min="1" placeholder="x">
                 </div>
-                <hr>
-                <div id="denominator-block" class="fraction__denominator">
-                    <label for="denominator">Denominator =</label>
-                    <input type="number" name="denominator" id="denominator" min="1" placeholder="y">
+                <hr class="fraction__vinculum">
+                <div id="denominator-block" class="fraction__denominator denominator">
+                    <label for="denominator" class="denominator__label">Denominator =</label>
+                    <input type="number" name="denominator" class="denominator__input id="denominator" min="1" placeholder="y">
                 </div>
             </div>
             <div>

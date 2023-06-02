@@ -123,24 +123,23 @@ main {
     margin: 2rem;
 }
 
-h1,
-.h1 {
+.page-top__h1 {
     display: inline-block;
     color: var(--color-primary);
     font-size: 2rem;
     margin: 0.5rem 0;
 }
 
-#question,
-#ans,
-#ans div,
-#ans p,
-#ans li {
+.form,
+.output__text,
+.output__text div,
+.output__text p,
+.output__text li {
    margin: 0.75rem 0; 
    animation: fade-in 2s;
 }
 
-#question {
+.form__question {
    line-height: 1.5;
 }
 
@@ -148,8 +147,22 @@ h1,
     font-size: 0.75em;
 }
 
-#numerator,
-#denominator {
+.fraction {
+    margin: 1rem auto;
+}
+
+.fraction__numerator,
+.fraction__denominator {
+    text-align: center;
+}
+
+.fraction__vinculum {
+    border: 0;
+    border-top: 2px solid var(--color-primary);
+}
+
+.numerator__input,
+.denominator__input {
     border: none;
     border-radius: 0.25rem;
     border: 0.125em solid var(--color-primary);
@@ -157,20 +170,6 @@ h1,
     height: 1.5rem;
     padding: 0 0.5rem;
     text-align: center;
-}
-
-#numerator-denominator-block {
-    margin: 1rem auto;
-}
-
-#numerator-block,
-#denominator-block {
-    text-align: center;
-}
-
-hr {
-    border: 0;
-    border-top: 2px solid var(--color-primary);
 }
 
 [id^="btn"] {
@@ -195,18 +194,18 @@ hr {
     color: var(--color-secondary);
 }
 
-#btn-random {
+.page-top__btn-random {
     background-color: var(--color-tertiary);
     color: var(--color-secondary);
     border: 0.125rem solid var(--color-tertiary);
 }
 
-#btn-random:hover {
+.page-top__btn-random:hover {
     background-color: var(--color-quaternary);
     color: var(--color-primary);
 }
 
-#btn-random:active {
+.page-top__btn-random:active {
     color: var(--color-secondary);
 }
 
@@ -257,7 +256,7 @@ div.output-area {
 }
 
 @media screen and (min-width: 992px) {
-    #numerator-denominator-block {
+    .fraction {
         margin: 1rem 0;
         width: 50%;
         padding-left: 5rem;

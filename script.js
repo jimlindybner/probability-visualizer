@@ -1,14 +1,4 @@
 window.onload = () => {
-    // footer: copyright year
-    let copyDate = new Date();
-    let currentYr = copyDate.getFullYear();
-    let copyYr = document.querySelector("#copy-yr");
-    if (currentYr > 2023) {
-        copyYr.innerHTML = `2023 &ndash; ${currentYr}`;
-    } else {
-        copyYr.innerHTML = currentYr;
-    }
-
     // variables & form handles
     const header = document.querySelector("header div.header-copy");
     const btnSubmit = document.querySelector("#btn-submit");
@@ -450,6 +440,16 @@ window.onload = () => {
     // refresh window function
     let reloadWindow = () => {
         window.location.reload();
+    }
+
+    // footer: copyright year
+    let copyDate = new Date();
+    let currentYr = copyDate.getFullYear();
+    let copyYr = document.querySelector("#copy-yr");
+    if (currentYr > 2023) {
+        copyYr.innerHTML = `2023 &ndash; ${currentYr}`;
+    } else {
+        copyYr.innerHTML = currentYr;
     }
 
     // event listeners
