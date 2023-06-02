@@ -155,11 +155,11 @@ main {
 .fraction__denominator {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .fraction__numerator {
-    grid-template-areas: "numerator-label numerator-input";
+    grid-template-areas: "numerator-label numerator-input numerator-input";
 }
 
 .numerator__label {
@@ -177,7 +177,7 @@ main {
 }
 
 .fraction__denominator {
-    grid-template-areas: "denominator-label denominator-input";
+    grid-template-areas: "denominator-label denominator-input denominator-input";
 }
 
 .denominator__label {
@@ -194,7 +194,8 @@ main {
     border: none;
     border-radius: 0.25rem;
     border: 0.125em solid var(--color-primary);
-    width: 5rem;
+    width: 75%;
+    min-width: 5rem;
     height: 1.5rem;
     padding: 0 0.5rem;
     text-align: center;
