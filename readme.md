@@ -6,7 +6,7 @@ A web app that helps you visualize and understand your odds!
 
 - “Random Stat” visualizes the odds and probabilities of random statistics already stored in the website
 
-- “Your Stat (Default)” lets you enter a fraction to help you visualize the probabilities and odds of “x in y”
+- “Your Stat” (default) lets you enter a fraction to help you visualize the probabilities and odds of “x in y”
 
 “Data visualization” is very important for companies these days and this app can help educate people on the value of data visualization.
 
