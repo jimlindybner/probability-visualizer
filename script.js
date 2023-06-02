@@ -1,11 +1,17 @@
 window.onload = () => {
     // VARIABLES & FORM HANDLES
+    // headings, btns & containers
     const header = document.querySelector("header div.header-copy");
     const btnSubmit = document.querySelector(".form__submit");
     const btnReload = document.querySelector(".page-top__btn-reload");
     const btnRandom = document.querySelector(".page-top__btn-random");
     const outputAns = document.querySelector(".output__text");
     const outputArea = document.querySelector(".output__dots-container");
+
+    // user input display
+    let x = document.querySelector(".question__x");
+    let y = document.querySelector(".question__y");
+    let aAn = document.querySelector(".question__aan");
 
     // colourless stylesheet
     const colourlessCSS = document.styleSheets[1];
@@ -16,7 +22,7 @@ window.onload = () => {
     const colourOff = document.querySelector("#colour-off");
 
     // main form
-    const form = document.visualization_form;
+    const form = document.forms.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
     let inputNumerator;
@@ -312,11 +318,6 @@ window.onload = () => {
     // FUNCTIONS
     // displayInput
     let displayInput = () => {
-        // variables and handles
-        let x = document.querySelector(".question__x");
-        let y = document.querySelector(".question__y");
-        let aAn = document.querySelector(".question__aan");
-
         // get input values for numerator and denominator
         inputNumerator = formNumerator.value;
         inputDenominator = formDenominator.value;
@@ -504,6 +505,31 @@ window.onload = () => {
         }
     }
 
+    // try again function
+    let tryAgain = () => {
+        // clear outputAns & outputArea
+        outputAns.innerHTML = "";
+        outputArea.innerHTML = "";
+
+        // unhide visualization form
+        form.style.display = "block";
+
+        // reset input values
+        formNumerator.value = "";
+        formDenominator.value = "";
+
+        // reset user input display
+        x.innerHTML = "x";
+        y.innerHTML = "y";
+        aAn.innerHTML = "an";
+
+        // change refresh btn text
+        btnReload.innerHTML = "Refresh";
+
+        // focus on numerator input
+        formNumerator.focus();
+    }
+
     // FOOTER - COPYRIGHT YEAR
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
@@ -518,8 +544,8 @@ window.onload = () => {
     // call calculate function when user submits form
     btnSubmit.addEventListener("click", calculate);
 
-    // call reloadWindow function when user clicks refresh btn
-    btnReload.addEventListener("click", reloadWindow);
+    // call tryAgain function when user clicks refresh btn
+    btnReload.addEventListener("click", tryAgain);
 
     // call reload window function when user clicks on header text
     header.addEventListener("click", reloadWindow);
