@@ -211,7 +211,7 @@ main {
 
 div.output-area {
     margin: 1rem 0;
-    height: 35vh;
+    height: 16vh;
     background-color: var(--color-secondary);
     display: flex;
     flex-flow: row wrap;
