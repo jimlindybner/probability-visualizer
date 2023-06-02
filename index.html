@@ -10,10 +10,10 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     
     <!-- main stylesheet -->
-    <link rel="stylesheet" href="./style.css" title="main-CSS">
+    <link rel="stylesheet" href="./style.css">
     
     <!-- colour-blind stylesheet -->
-    <link rel="stylesheet" href="./colourless.css" title="colourless-css">
+    <link rel="stylesheet" href="./colourless.css">
     
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="http://probability.lindybner.com/">
@@ -41,6 +41,13 @@
                 <div>
                     <button id="btn-random" class="page-top__btn-random">Random Stat</button>
                     <button id="btn-reload" class="page-top__btn-reload">Refresh</button>
+                    <form action="#" method="get" name="colour_form" class="page-top__colour-toggle">
+                        <span>Colour:</span>
+                        <input type="radio" name="colour" id="colour-on" value="on" checked>
+                        <label for="colour-on">On</label>
+                        <input type="radio" name="colour" id="colour-off" value="off">
+                        <label for="colour-off">Off</label>
+                    </form>
                 </div>
             </div>
             <form action="#" method="get" name="visualization_form" class="form">

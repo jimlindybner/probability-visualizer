@@ -1,24 +1,39 @@
 window.onload = () => {
-    // variables & form handles
+    // VARIABLES & FORM HANDLES
     const header = document.querySelector("header div.header-copy");
     const btnSubmit = document.querySelector(".form__submit");
     const btnReload = document.querySelector(".page-top__btn-reload");
     const btnRandom = document.querySelector(".page-top__btn-random");
     const outputAns = document.querySelector(".output__text");
     const outputArea = document.querySelector(".output__dots-container");
+
+    // colourless stylesheet
+    const colourlessCSS = document.styleSheets[1];
+
+    // colour toggle
+    const colourForm = document.forms.colour_form;
+    const colourOn = document.querySelector("#colour-on");
+    const colourOff = document.querySelector("#colour-off");
+
+    // main form
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
     let inputNumerator;
     let inputDenominator;
+
+    // msgs
     const msgInputError1 = "Please enter only natural numbers (1, 2, 3, 4, etc.) up to 100,000.";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The probability figures above may not be exact due to rounding.";
 
-    // focus on formNumerator on page load
+    // ENABLE COLOUR ON PAGE LOAD
+    colourlessCSS.disabled = true;
+
+    // FOCUS ON NUMERATOR INPUT ON PAGE LOAD
     formNumerator.focus();
 
-    // random stats & facts
+    // RANDOM STATS & FACTS
     let funStats = [
         {
             desc: "40%, or 2 in 5, of the people you shook hands with didn't wash their hands after the last time they used the washroom.",
@@ -294,7 +309,7 @@ window.onload = () => {
         }
     ];
 
-    // functions
+    // FUNCTIONS
     // displayInput
     let displayInput = () => {
         // variables and handles
@@ -478,7 +493,18 @@ window.onload = () => {
         window.location.reload();
     }
 
-    // footer: copyright year
+    // toggle style sheets
+    let toggleStyleSheets = () => {
+        if (colourOn.checked) {
+            colourlessCSS.disabled = true;
+        } else if (colourOff.checked) {
+            colourlessCSS.disabled = false;
+        } else {
+            colourlessCSS.disabled = true;
+        }
+    }
+
+    // FOOTER - COPYRIGHT YEAR
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
     let copyYr = document.querySelector("#copy-yr");
@@ -488,7 +514,7 @@ window.onload = () => {
         copyYr.innerHTML = currentYr;
     }
 
-    // event listeners
+    // EVENT LISTENERS
     // call calculate function when user submits form
     btnSubmit.addEventListener("click", calculate);
 
@@ -504,4 +530,7 @@ window.onload = () => {
     // display user input as they type
     form.numerator.addEventListener("input", displayInput);
     form.denominator.addEventListener("input", displayInput);
+
+    // toggle colour
+    colourForm.addEventListener("input", toggleStyleSheets);
 }
