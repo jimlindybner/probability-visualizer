@@ -154,11 +154,39 @@ main {
 .fraction__numerator,
 .fraction__denominator {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fraction__numerator {
+    grid-template-areas: "numerator-label numerator-input";
+}
+
+.numerator__label {
+    grid-area: numerator-label;
+    margin: auto;
+}
+
+.numerator__input {
+    grid-area: numerator-input;
 }
 
 .fraction__vinculum {
     border: 0;
     border-top: 2px solid var(--color-primary);
+}
+
+.fraction__denominator {
+    grid-template-areas: "denominator-label denominator-input";
+}
+
+.denominator__label {
+    grid-area: denominator-label;
+    margin: auto;
+}
+
+.denominator__input {
+    grid-area: denominator-input;
 }
 
 .numerator__input,

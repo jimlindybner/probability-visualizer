@@ -1,11 +1,10 @@
 window.onload = () => {
     // variables & form handles
     const header = document.querySelector("header div.header-copy");
-    const btnSubmit = document.querySelector("#btn-submit");
-    const btnReload = document.querySelector("#btn-reload");
-    const btnRandom = document.querySelector("#btn-random");
-    const outputArea = document.querySelector(".output-area");
-    const outputAns = document.querySelector("#ans");
+    const btnSubmit = document.querySelector(".form__submit");
+    const btnReload = document.querySelector("page-top__btn-reload");
+    const btnRandom = document.querySelector(".page-top__btn-random");
+    const outputArea = document.querySelector(".output__dots-container");
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
@@ -464,4 +463,7 @@ window.onload = () => {
 
     // call randomStat function when user clicks random btn
     btnRandom.addEventListener("click", randomStat);
+
+    //display user input as they type
+    
 }
