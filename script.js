@@ -379,7 +379,7 @@ window.onload = () => {
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
         outputAns.innerHTML += `<p><span class="text-tertiary-color">That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</span></p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
-        outputAns.innerHTML += `<p>Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> <span class="txt-three-quarters">(retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
+        outputAns.innerHTML += `<p><span class="txt-three-quarters">Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> (retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
 
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
@@ -462,10 +462,8 @@ window.onload = () => {
 
         // output to outputAns
         outputAns.innerHTML = `<p>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</p>`
-        outputAns.innerHTML += `<ul>`;
-        outputAns.innerHTML += `<li><span class="text-tertiary-color">a probability of ${decimalFixed} (&nbsp;${percentageFixed}% chance&nbsp;)</span></li>`;
-        outputAns.innerHTML += `<li><span class="text-tertiary-color">${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</span></li>`;
-        outputAns.innerHTML += `</ul>`;
+        outputAns.innerHTML += `<p><span class="text-tertiary-color">a probability of ${decimalFixed} (&nbsp;${percentageFixed}% chance&nbsp;)</span></p>`;
+        outputAns.innerHTML += `<p><span class="text-tertiary-color">or ${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</span></p>`;
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`;
 
         // call visualization function

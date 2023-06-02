@@ -140,7 +140,7 @@ main {
 }
 
 .form__question {
-   line-height: 1.5;
+   line-height: 4;
 }
 
 .txt-three-quarters {
@@ -285,8 +285,16 @@ div.output-area {
 }
 
 @media screen and (min-width: 992px) {
+    main {
+        text-align: center;
+    }
+
     .fraction {
         margin: 1rem auto;
         width: 50%;
+    }
+
+    div.output-area {
+        justify-content: center;
     }
 }
