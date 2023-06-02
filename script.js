@@ -293,8 +293,8 @@ window.onload = () => {
     ];
 
     // functions
-    // keyDown handler
-    let keyDownHandler = () => {
+    // displayInput
+    let displayInput = () => {
         // variables and handles
         let inputNumerator;
         let inputDenominator;
@@ -504,6 +504,6 @@ window.onload = () => {
     btnRandom.addEventListener("click", randomStat);
 
     //display user input as they type
-    form.numerator.addEventListener("input", keyDownHandler);
-    form.denominator.addEventListener("input", keyDownHandler);
+    form.numerator.addEventListener("input", displayInput);
+    form.denominator.addEventListener("input", displayInput);
 }
