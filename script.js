@@ -11,9 +11,9 @@ window.onload = () => {
     const formDenominator = form.denominator;
     let inputNumerator;
     let inputDenominator;
-    const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4, etc.) up to 100,000.";
+    const msgInputError1 = "Please enter only natural numbers (1, 2, 3, 4, etc.) up to 100,000.";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
-    const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding.";
+    const msgRoundedFigures = "Note: The probability figures above may not be exact due to rounding.";
 
     // focus on formNumerator on page load
     formNumerator.focus();
