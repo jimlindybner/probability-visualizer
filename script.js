@@ -9,6 +9,8 @@ window.onload = () => {
     const form = document.visualization_form;
     const formNumerator = form.numerator;
     const formDenominator = form.denominator;
+    let inputNumerator;
+    let inputDenominator;
     const msgInputError1 = "There is an invalid input in one or more fields. \nPlease enter only natural numbers (1, 2, 3, 4, etc.) up to 100,000.";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The above figures for probabilities and odds may not be exact due to rounding.";
@@ -296,8 +298,6 @@ window.onload = () => {
     // displayInput
     let displayInput = () => {
         // variables and handles
-        let inputNumerator;
-        let inputDenominator;
         let x = document.querySelector(".question__x");
         let y = document.querySelector(".question__y");
         let aAn = document.querySelector(".question__aan");
@@ -324,7 +324,7 @@ window.onload = () => {
         }
 
         // change a to an if numerator = 11, 18, starts with 8
-        if (inputNumerator === "11" || inputNumerator === "18" || inputNumerator === "8" || inputNumerator.startsWith("8")) {
+        if (inputNumerator === "11" || inputNumerator === "11000" || inputNumerator === "18" || inputNumerator === "8" || inputNumerator.startsWith("8")) {
             aAn.innerHTML = "an";
         } else {
             aAn.innerHTML = "a";
@@ -406,11 +406,11 @@ window.onload = () => {
         // prevent form submission
         event.preventDefault();
 
-        // variables
-        const inputNumerator = formNumerator.value;
-        const inputDenominator = formDenominator.value;
-        const numerator = parseInt(inputNumerator);
-        const denominator = parseInt(inputDenominator);
+        // get user input values & declare new variables
+        inputNumerator = formNumerator.value;
+        inputDenominator = formDenominator.value;
+        let numerator = parseInt(inputNumerator);
+        let denominator = parseInt(inputDenominator);
         let simpleNumerator;
         let simpleDenominator;
         let percentage;
@@ -503,7 +503,7 @@ window.onload = () => {
     // call randomStat function when user clicks random btn
     btnRandom.addEventListener("click", randomStat);
 
-    //display user input as they type
+    // display user input as they type
     form.numerator.addEventListener("input", displayInput);
     form.denominator.addEventListener("input", displayInput);
 }
