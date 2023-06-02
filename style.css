@@ -257,8 +257,7 @@ div.output-area {
 
 @media screen and (min-width: 992px) {
     .fraction {
-        margin: 1rem 0;
+        margin: 1rem auto;
         width: 50%;
-        padding-left: 10rem;
     }
 }
