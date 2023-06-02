@@ -10,7 +10,7 @@ A web app that helps you visualize and understand your odds!
 
 ## Additional Information
 
-“Data visualization” is very important for companies these days and this app can help educate people on the value of (and fun in) visualizing data.
+“Data visualization” is very important for all kinds of organizations these days and this simple app can be used as an educational tool to demonstrate the value of (and fun in) visualizing data.
 
 This visualizer is inspired by books like [*Making Numbers Count*](https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444) and [*The Data Detective*](https://timharford.com/books/datadetective/). 
 
