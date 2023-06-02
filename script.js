@@ -293,6 +293,34 @@ window.onload = () => {
     ];
 
     // functions
+    // keyDown handler
+    let keyDownHandler = () => {
+        // get input values for numerator and denominator
+        const inputNumerator = formNumerator.value;
+        const inputDenominator = formDenominator.value;
+
+        // clear x and y
+        let x = document.querySelector(".question__x");
+        let y = document.querySelector(".question__y");
+
+        x.innerHTML = "";
+        y.innerHTML = "";
+
+        // output input values to x and y
+        if (inputNumerator === "") {
+            x.innerHTML = "x";
+        } else {
+            x.innerHTML = inputNumerator;
+        }
+
+        if (inputDenominator === "") {
+            y.innerHTML = "y";
+        } else {
+            y.innerHTML = inputDenominator;
+        }
+
+    }
+
     // visualization
     let visualize = (numerator, denominator) => {
         // output-area: create dots based on numerator
@@ -466,5 +494,6 @@ window.onload = () => {
     btnRandom.addEventListener("click", randomStat);
 
     //display user input as they type
-    
+    form.numerator.addEventListener("input", keyDownHandler);
+    form.denominator.addEventListener("input", keyDownHandler);
 }
