@@ -1,0 +1,62 @@
+.header-copy .text-tertiary-color {
+    color: #fff;
+}
+
+.text-tertiary-color {
+    color: #000;
+}
+
+.page-top__btn-random { 
+    display: inline-block;
+    font-family: 'Neucha', Arial, sans-serif;
+    font-size: 1rem;
+    border: 0.125rem solid var(--color-primary);
+    border-radius: 0.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.page-top__btn-random:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.page-top__btn-random:active {
+    color: var(--color-secondary);
+}
+
+.output__text a,
+.output__text a:link {
+    color: #000;
+}
+
+.output__text a:hover {
+    text-decoration: none;
+}
+
+[class^="dot"] {
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 2px solid #000;
+    margin: 0.2rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    animation: fade-in 2s;
+}
+
+.dot-hit {
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+.footer-copy a,
+.footer-copy a:link {
+    color: #fff;
+}
+
+.footer-copy a:hover {
+    text-decoration: none;
+}
