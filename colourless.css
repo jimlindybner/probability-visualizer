@@ -1,9 +1,9 @@
 .header-copy .text-tertiary-color {
-    color: #fff;
+    color: var(--color-secondary);
 }
 
 .text-tertiary-color {
-    color: #000;
+    color: var(--color-primary);
 }
 
 .page-top__btn-random { 
@@ -44,11 +44,15 @@
 
 .output__text a,
 .output__text a:link {
-    color: #000;
+    color: var(--color-primary);
 }
 
 .output__text a:hover {
     text-decoration: none;
+}
+
+.output__text a:active {
+    color: var(--color-quinary);
 }
 
 [class^="dot"] {
@@ -62,15 +66,19 @@
 }
 
 .dot-hit {
-    border: 2px solid #000;
-    background-color: #fff;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .footer-copy a,
 .footer-copy a:link {
-    color: #fff;
+    color: var(--color-secondary);
 }
 
 .footer-copy a:hover {
     text-decoration: none;
+}
+
+.footer-copy a:active {
+    color: var(--color-quinary);
 }
