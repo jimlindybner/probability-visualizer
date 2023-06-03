@@ -623,4 +623,9 @@ window.onload = () => {
 
     // toggle colour
     colourForm.addEventListener("input", toggleStyleSheets);
+
+    // back-to-top btn
+    document.querySelector(".scroll-to-top-btn").addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
 }

@@ -82,3 +82,8 @@
 .footer-copy a:active {
     color: var(--color-quinary);
 }
+
+.scroll-to-top-btn {
+    color: var(--color-primary);
+    background-color: var(--color-quinary);
+}
