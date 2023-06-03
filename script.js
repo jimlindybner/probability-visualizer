@@ -515,8 +515,10 @@ window.onload = () => {
         // call visualization function
         visualize(simpleNumerator, simpleDenominator);
 
-        // focus on btnReload
-        btnReload.focus();
+        // focus on btnReload after a few seconds (when page-top btns are re-enabled)
+        setTimeout(() => {
+            btnReload.focus();
+        }, 3000);
     }
 
     // refresh window function
