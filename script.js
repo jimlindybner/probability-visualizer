@@ -314,13 +314,37 @@ window.onload = () => {
             retrieveDate: "2023-05-16"
         },
         {
-            desc: "Out of 50 air particles on Earth, 39 are nitrogen. The rest are mostly oxygen.",
+            desc: "Out of 50 air molecules on Earth, 39 are nitrogen. The rest are mostly oxygen.",
             numer: 39,
             denom: 50,
             source: "NASA",
             sourceURL: "https://climate.nasa.gov/news/2491/10-interesting-things-about-air/#:~:text=The%20air%20in%20Earth's%20atmosphere,nitrogen%20and%2021%20percent%20oxygen.",
             retrieveDate: "2023-06-02"
         },
+        {
+            desc: "Out of 25 air molecules on Mars, 24 are carbon dioxide.",
+            numer: 24,
+            denom: 25,
+            source: "NASA",
+            sourceURL: "https://mars.nasa.gov/all-about-mars/facts/",
+            retrievalDate: "2023-06-03"
+        },
+        {
+            desc: "The largest planet, Jupiter, can fit inside the sun more than 1,000 times.",
+            numer: 1,
+            denom: 1000,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Planetary_mass",
+            retrieveDate: "2023-06-03"
+        },
+        {
+            desc: "Only 1 out of 25 parts of the universe is made up of stars, planets and galaxies. The rest is made up of dark matter and dark energy &mdash; things astronomers can't yet see, detect or even comprehend.",
+            numer: 1,
+            denom: 25,
+            source: "Space.com",
+            sourceURL: "https://www.space.com/11642-dark-matter-dark-energy-4-percent-universe-panek.html",
+            retrievalDate: "2023-06-03"
+        }
     ];
 
     // FUNCTIONS
