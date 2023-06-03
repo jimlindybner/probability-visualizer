@@ -330,7 +330,7 @@ window.onload = () => {
             retrievalDate: "2023-06-03"
         },
         {
-            desc: "If the solar system were to be divided into 5,000 equal parts, 4,993 would be made up of the sun's mass (the remaining 7 parts would mostly be just Jupiter).",
+            desc: "If the solar system were to be divided into 5,000 equal parts, 4,993 would be made up of the sun's mass (the remaining 7 parts would mostly be just the planet Jupiter).",
             numer: 4993,
             denom: 5000,
             source: "Wikipedia",
