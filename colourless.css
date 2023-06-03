@@ -28,14 +28,16 @@
     color: var(--color-secondary);
 }
 
-.page-top__btn-random_disabled {
+.page-top__btn-random_disabled,
+.page-top__btn-reload_disabled {
     cursor: not-allowed;
     background-color: var(--color-secondary);
     color: var(--color-quinary);
     border-color: var(--color-quinary);
 }
 
-.page-top__btn-random_disabled:hover {
+.page-top__btn-random_disabled:hover,
+.page-top__btn-reload_disabled:hover {
     background-color: var(--color-secondary);
     color: var(--color-quinary);
 }

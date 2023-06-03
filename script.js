@@ -372,15 +372,26 @@ window.onload = () => {
         }
     }
 
-    // random stat
-    let randomStat = () => {
-        // disable random stat btn for a few seconds
+    // disable pagetop btns
+    let disablePagetopBtns = () => {
         btnRandom.disabled = true;
+        btnReload.disabled = true;
         btnRandom.classList.add("page-top__btn-random_disabled");
+        btnReload.classList.add("page-top__btn-reload_disabled");
         setTimeout(() => {
             btnRandom.disabled = false;
             btnRandom.classList.remove("page-top__btn-random_disabled");
         }, 3000);
+        setTimeout(() => {
+            btnReload.disabled = false;
+            btnReload.classList.remove("page-top__btn-reload_disabled");
+        }, 3000);
+    }
+
+    // random stat
+    let randomStat = () => {
+        // disable pagetop btns for a few seconds
+        disablePagetopBtns();
 
         // hide form
         form.style.display = "none";
@@ -437,6 +448,9 @@ window.onload = () => {
     let calculate = event => {
         // prevent form submission
         event.preventDefault();
+
+        // disable pagetop btns for a few seconds
+        disablePagetopBtns();
 
         // get user input values & declare new variables
         inputNumerator = formNumerator.value;
