@@ -330,11 +330,11 @@ window.onload = () => {
             retrievalDate: "2023-06-03"
         },
         {
-            desc: "The largest planet, Jupiter, can fit inside the sun more than 1,000 times.",
-            numer: 1,
-            denom: 1000,
+            desc: "If the Solar System were to be divided into 5,000 parts, 4,993 would be made up of the sun's mass. The remaining 7 parst would mainly be just Jupiter.",
+            numer: 4993,
+            denom: 5000,
             source: "Wikipedia",
-            sourceURL: "https://en.wikipedia.org/wiki/Planetary_mass",
+            sourceURL: "https://en.wikipedia.org/wiki/Solar_System",
             retrieveDate: "2023-06-03"
         },
         {
