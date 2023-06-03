@@ -58,7 +58,7 @@ window.onload = () => {
             retrieveDate: "2023-05-14"
         },
         {
-            desc: "About 1 in every 3,000 calico cats is born a male.",
+            desc: "Only about 1 in every 3,000 calico cats is born a male.",
             numer: 1,
             denom: 3000,
             source: "The Spruce Pets",
@@ -338,12 +338,12 @@ window.onload = () => {
             retrieveDate: "2023-06-03"
         },
         {
-            desc: "Only 1 out of 25 parts of the universe is made up of stars, planets and galaxies. The rest is made up of dark matter and dark energy &mdash; things astronomers can't yet see, detect or even comprehend.",
+            desc: "Only 1 in 25 parts of the universe is made up of stars, planets and galaxies. The rest is made up of dark matter and dark energy &mdash; things astronomers can't yet see, detect or even comprehend.",
             numer: 1,
             denom: 25,
             source: "Space.com",
             sourceURL: "https://www.space.com/11642-dark-matter-dark-energy-4-percent-universe-panek.html",
-            retrievalDate: "2023-06-03"
+            retrieveDate: "2023-06-03"
         }
     ];
 
