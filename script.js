@@ -454,7 +454,7 @@ window.onload = () => {
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
         outputAns.innerHTML += `<p><span class="text-tertiary-color">That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer.toLocaleString("en-CA")}&#8209;to&#8209;${(randomStatDenom - randomStatNumer).toLocaleString("en-CA")} (&nbsp;${randomStatNumer.toLocaleString("en-CA")}&nbsp;:&nbsp;${(randomStatDenom - randomStatNumer).toLocaleString("en-CA")}&nbsp;) odds.</span></p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
-        outputAns.innerHTML += `<p><span class="txt-three-quarters">Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> (retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
+        outputAns.innerHTML += `<p><span class="txt-three-quarters">Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> (retrieved ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
 
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
