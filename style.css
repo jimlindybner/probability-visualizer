@@ -58,6 +58,7 @@ table {
     --color-secondary: #fff;
     --color-tertiary: #f00;
     --color-quaternary: #ff8c8c;
+    --color-quinary: #bfbfbf;
 }
 
 html {
@@ -237,6 +238,18 @@ main {
 
 .page-top__btn-random:active {
     color: var(--color-secondary);
+}
+
+.page-top__btn-random_disabled {
+    cursor: not-allowed;
+    background-color: var(--color-secondary);
+    color: var(--color-quinary);
+    border-color: var(--color-quinary);
+}
+
+.page-top__btn-random_disabled:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-quinary);
 }
 
 .page-top__colour-toggle {

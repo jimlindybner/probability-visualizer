@@ -28,6 +28,18 @@
     color: var(--color-secondary);
 }
 
+.page-top__btn-random_disabled {
+    cursor: not-allowed;
+    background-color: var(--color-secondary);
+    color: var(--color-quinary);
+    border-color: var(--color-quinary);
+}
+
+.page-top__btn-random_disabled:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-quinary);
+}
+
 .output__text a,
 .output__text a:link {
     color: #000;

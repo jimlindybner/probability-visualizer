@@ -374,6 +374,14 @@ window.onload = () => {
 
     // random stat
     let randomStat = () => {
+        // disable random stat btn for 5 seconds
+        btnRandom.disabled = true;
+        btnRandom.classList.toggle("page-top__btn-random_disabled");
+        setTimeout(() => {
+            btnRandom.disabled = false;
+            btnRandom.classList.toggle("page-top__btn-random_disabled");
+        }, 3000);
+
         // hide form
         form.style.display = "none";
 
