@@ -7,6 +7,8 @@
     <meta name="description" content="A web app that helps you visualize and understand your odds!">
     <meta name="keywords" content="data visualization, probability, probabilities, odds">
     <title>Probability Visualizer</title>
+
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     
     <!-- main stylesheet -->
@@ -31,16 +33,22 @@
     <meta name="twitter:image" content="http://lindybner.com/images/probability-visualizer.jpeg">
 </head>
 <body>
+    <!-- header section -->
     <header>
         <div class="header-copy"><span class="text-tertiary-color">Probability</span> Visualizer</div>
     </header>
+    <!-- header section end -->
+    <!-- main section -->
     <main>
         <div class="starting-block">
             <div class="page-top">
                 <h1 class="page-top__h1">Visualize <span class="text-tertiary-color">Your Odds</span>!</h1>
                 <div>
+                    <!-- random stat btn -->
                     <button id="btn-random" class="page-top__btn-random">Random Stat</button>
+                    <!-- refresh btn -->
                     <button id="btn-reload" class="page-top__btn-reload">Refresh</button>
+                    <!-- colour switch -->
                     <form action="#" method="get" name="colour_form" class="page-top__colour-toggle">
                         <span>Colour:</span>
                         <input type="radio" name="colour" id="colour-on" value="on" checked>
@@ -50,29 +58,39 @@
                     </form>
                 </div>
             </div>
+            <!-- main visualization form -->
             <form action="#" method="get" name="visualization_form" class="form">
                 <div id="question" class="form__question question">
                     What does <span class="question__aan">an</span> <span class="text-tertiary-color"><span class="question__x">x</span>-in-<span class="question__y">y</span></span> chance actually look like?
                 </div>
                 <div id="numerator-denominator-block" class="fraction">
+                    <!-- form - numerator -->
                     <div id="numerator-block" class="fraction__numerator numerator">
                         <label for="numerator" class="numerator__label">Numerator&nbsp;=</label>
                         <input type="number" name="numerator" class="numerator__input" id="numerator" min="1" placeholder="x">
                     </div>
+                    <!-- form - numerator end-->
                     <hr class="fraction__vinculum">
+                    <!-- form - denominator -->
                     <div id="denominator-block" class="fraction__denominator denominator">
                         <label for="denominator" class="denominator__label">Denominator&nbsp;=</label>
                         <input type="number" name="denominator" class="denominator__input" id="denominator" min="1" placeholder="y">
                     </div>
+                    <!-- form - denominator end -->
                 </div>
                 <div>
                     <button type="submit" id="btn-submit" class="form__submit">Visualize</button>
                 </div>
             </form>
+            <!-- main visualization form end -->
         </div>
+        <!-- outputs - answer and dots container -->
         <div id="ans" class="output__text"></div>
         <div class="output-area output__dots-container"></div>
+        <!-- outputs - answer and dots container end -->
     </main>
+    <!-- main section end -->
+    <!-- footer section -->
     <footer>
         <div class="footer-copy">
             <div class="inspiration">
@@ -86,6 +104,8 @@
             <div class="copyright">&copy; <span id="copy-yr"></span> <a href="http://lindybner.com">Jim Lin-Dybner</a>.</div>
         </div>
     </footer>
+    <!-- footer section end -->
+    <!-- main script -->
     <script src="./script.js"></script>
 </body>
 </html>

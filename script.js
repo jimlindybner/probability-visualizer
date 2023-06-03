@@ -1,6 +1,6 @@
 window.onload = () => {
     // VARIABLES & FORM HANDLES
-    // headings, btns & containers
+    // btns & containers
     const header = document.querySelector("header div.header-copy");
     const btnSubmit = document.querySelector(".form__submit");
     const btnReload = document.querySelector(".page-top__btn-reload");
