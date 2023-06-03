@@ -338,13 +338,13 @@ window.onload = () => {
         if (inputNumerator === "") {
             x.innerHTML = "x";
         } else {
-            x.innerHTML = inputNumerator;
+            x.innerHTML = parseInt(inputNumerator).toLocaleString("en-CA");
         }
 
         if (inputDenominator === "") {
             y.innerHTML = "y";
         } else {
-            y.innerHTML = inputDenominator;
+            y.innerHTML = parseInt(inputDenominator).toLocaleString("en-CA");
         }
 
         // change a to an if numerator = 11, 18, 11000 or starts with 8
@@ -420,7 +420,7 @@ window.onload = () => {
 
         // output to outputAns
         outputAns.innerHTML = `<p>${funStats[randomNum].desc}</p>`
-        outputAns.innerHTML += `<p><span class="text-tertiary-color">That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer}&#8209;to&#8209;${randomStatDenom - randomStatNumer} (&nbsp;${randomStatNumer}&nbsp;:&nbsp;${randomStatDenom - randomStatNumer}&nbsp;) odds.</span></p>`
+        outputAns.innerHTML += `<p><span class="text-tertiary-color">That's a probability of ${randomStatProbFixed} (&nbsp;${randomStatPctFixed}% chance&nbsp;), or ${randomStatNumer.toLocaleString("en-CA")}&#8209;to&#8209;${(randomStatDenom - randomStatNumer).toLocaleString("en-CA")} (&nbsp;${randomStatNumer.toLocaleString("en-CA")}&nbsp;:&nbsp;${(randomStatDenom - randomStatNumer).toLocaleString("en-CA")}&nbsp;) odds.</span></p>`
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`
         outputAns.innerHTML += `<p><span class="txt-three-quarters">Source: <a href="${funStats[randomNum].sourceURL}" target="_blank">${funStats[randomNum].source}</a> (retrieved on ${outputDate} ${monthNames[outputMonth]} ${outputYear})</span>.</p>`;
 
@@ -507,9 +507,9 @@ window.onload = () => {
         percentageFixed = percentage.toFixed(1);
 
         // output to outputAns
-        outputAns.innerHTML = `<p>${numerator} in ${denominator} (&nbsp;${simpleNumerator} / ${simpleDenominator}&nbsp;) is:</p>`
+        outputAns.innerHTML = `<p>${numerator.toLocaleString("en-CA")} in ${denominator.toLocaleString("en-CA")} (&nbsp;${simpleNumerator.toLocaleString("en-CA")} / ${simpleDenominator.toLocaleString("en-CA")}&nbsp;) is:</p>`
         outputAns.innerHTML += `<p><span class="text-tertiary-color">a probability of ${decimalFixed} (&nbsp;${percentageFixed}% chance&nbsp;)</span></p>`;
-        outputAns.innerHTML += `<p><span class="text-tertiary-color">or ${simpleNumerator}&#8209;to&#8209;${simpleDenominator - simpleNumerator} (&nbsp;${simpleNumerator}&nbsp;:&nbsp;${simpleDenominator - simpleNumerator}&nbsp;) odds</span></p>`;
+        outputAns.innerHTML += `<p><span class="text-tertiary-color">or ${simpleNumerator.toLocaleString("en-CA")}&#8209;to&#8209;${(simpleDenominator - simpleNumerator).toLocaleString("en-CA")} (&nbsp;${simpleNumerator.toLocaleString("en-CA")}&nbsp;:&nbsp;${(simpleDenominator - simpleNumerator).toLocaleString("en-CA")}&nbsp;) odds</span></p>`;
         outputAns.innerHTML += `<p class="txt-three-quarters">${msgRoundedFigures}</p>`;
 
         // call visualization function
