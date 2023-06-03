@@ -376,10 +376,10 @@ window.onload = () => {
     let randomStat = () => {
         // disable random stat btn for a few seconds
         btnRandom.disabled = true;
-        btnRandom.classList.toggle("page-top__btn-random_disabled");
+        btnRandom.classList.add("page-top__btn-random_disabled");
         setTimeout(() => {
             btnRandom.disabled = false;
-            btnRandom.classList.toggle("page-top__btn-random_disabled");
+            btnRandom.classList.remove("page-top__btn-random_disabled");
         }, 3000);
 
         // hide form
