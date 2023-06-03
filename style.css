@@ -264,7 +264,7 @@ main {
     margin: 0.15rem;
 }
 
-div.output-area {
+div.output__dots-container {
     margin: 1rem 0;
     background-color: var(--color-secondary);
     display: flex;
@@ -322,7 +322,7 @@ div.output-area {
         width: 50%;
     }
 
-    div.output-area {
+    div.output__dots-container {
         justify-content: center;
         max-width: 30rem;
         margin-left: auto;
