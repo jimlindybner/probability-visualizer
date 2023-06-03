@@ -374,7 +374,7 @@ window.onload = () => {
 
     // random stat
     let randomStat = () => {
-        // disable random stat btn for 5 seconds
+        // disable random stat btn for a few seconds
         btnRandom.disabled = true;
         btnRandom.classList.toggle("page-top__btn-random_disabled");
         setTimeout(() => {
