@@ -346,7 +346,7 @@ window.onload = () => {
             retrieveDate: "2023-06-03"
         },
         {
-            desc: "Only about 1 in 10 people lives in the southern hemisphere.",
+            desc: "For every 10 people in the world, only about 1 lives in the southern hemisphere.",
             numer: 1,
             denom: 10,
             source: "Wikipedia",
