@@ -347,7 +347,7 @@ window.onload = () => {
             y.innerHTML = inputDenominator;
         }
 
-        // change a to an if numerator = 11, 18, starts with 8
+        // change a to an if numerator = 11, 18, 11000 or starts with 8
         if (inputNumerator === "11" || inputNumerator === "11000" || inputNumerator === "18" || inputNumerator === "8" || inputNumerator.startsWith("8")) {
             aAn.innerHTML = "an";
         } else {
