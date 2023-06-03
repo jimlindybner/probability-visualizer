@@ -222,7 +222,7 @@ main {
 }
 
 [id^="btn"]:active {
-    color: var(--color-secondary);
+    color: var(--color-quinary);
 }
 
 .page-top__btn-random {
@@ -232,12 +232,12 @@ main {
 }
 
 .page-top__btn-random:hover {
-    background-color: var(--color-quaternary);
-    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
 }
 
 .page-top__btn-random:active {
-    color: var(--color-secondary);
+    color: var(--color-quaternary);
 }
 
 .page-top__btn-random_disabled,
