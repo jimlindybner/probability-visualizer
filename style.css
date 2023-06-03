@@ -117,7 +117,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--color-secondary);
+    color: var(--color-quaternary);
 }
 
 main {
