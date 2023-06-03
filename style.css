@@ -141,6 +141,11 @@ main {
    animation: fade-in 2s;
 }
 
+.colour-toggle-field__legend {
+    float: left;
+    margin-top: 0.125rem;
+}
+
 .form__question {
    line-height: 4;
 }
@@ -329,6 +334,10 @@ div.output__dots-container {
     main {
         width: 75%;
         margin: 2rem auto;
+    }
+
+    .colour-toggle-field__legend {
+        margin-top: 0;
     }
 }
 
