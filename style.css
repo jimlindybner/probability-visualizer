@@ -308,7 +308,7 @@ div.output__dots-container {
     color: var(--color-secondary);
     background-color: var(--color-tertiary);
     border: 0;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     opacity: 0.8;
     cursor: pointer;
     transition: 0.2s;
