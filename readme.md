@@ -2,7 +2,7 @@
 
 A web app that helps you visualize and understand your odds!
 
-“Data visualization” is important for organizations of all kinds these days. This simple app can be used as an educational tool to demonstrate the value of (and fun in) visualizing data in general and probabilities more specifically.
+“Data visualization” is important for organizations of all stripes these days. This simple app can serve as a useful educational tool to demonstrate the value of (and fun in) visualizing data.
 
 ## 2 features:
 
@@ -10,7 +10,7 @@ A web app that helps you visualize and understand your odds!
 
 - “Your Stat” (the default) lets you enter a fraction to help you visualize the probabilities and odds of “x in y.”
 
-## Additional Information
+## Additional Notes
 
 I've also added a “colour switch” that lets users turn colour "on" and "off" to help folks dealing with colour-blindness more easily use this web app.
 
