@@ -344,6 +344,14 @@ window.onload = () => {
             source: "Space.com",
             sourceURL: "https://www.space.com/11642-dark-matter-dark-energy-4-percent-universe-panek.html",
             retrieveDate: "2023-06-03"
+        },
+        {
+            desc: "Only about 1 in 10 people lives in the southern hemisphere.",
+            numer: 1,
+            denom: 10,
+            source: "Wikipedia",
+            sourceURL: "https://en.wikipedia.org/wiki/Southern_Hemisphere#:~:text=More%20than%20850%20million%20people,the%20total%20global%20human%20population.",
+            retrieveDate: "2023-06-03"
         }
     ];
 
