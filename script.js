@@ -449,9 +449,6 @@ window.onload = () => {
         // prevent form submission
         event.preventDefault();
 
-        // disable pagetop btns for a few seconds
-        disablePagetopBtns();
-
         // get user input values & declare new variables
         inputNumerator = formNumerator.value;
         inputDenominator = formDenominator.value;
@@ -489,6 +486,9 @@ window.onload = () => {
             alert(msgInputError2);
             return false;
         }
+
+        // disable pagetop btns for a few seconds
+        disablePagetopBtns();
 
         // hide form
         form.style.display = "none";
