@@ -330,7 +330,7 @@ window.onload = () => {
             retrievalDate: "2023-06-03"
         },
         {
-            desc: "If the Solar System were to be divided into 5,000 parts, 4,993 would be made up of the sun's mass. The remaining 7 parst would mainly be just Jupiter.",
+            desc: "If the solar system were to be divided into 5,000 equal parts, 4,993 would be made up of the sun's mass (the remaining 7 parts would mostly be just Jupiter).",
             numer: 4993,
             denom: 5000,
             source: "Wikipedia",
@@ -338,7 +338,7 @@ window.onload = () => {
             retrieveDate: "2023-06-03"
         },
         {
-            desc: "Only 1 in 25 parts of the universe is made up of stars, planets and galaxies. The rest is made up of dark matter and dark energy &mdash; things astronomers can't yet see, detect or even comprehend.",
+            desc: "If the universe were to be divided into 25 equal parts, only 1 would be made up of stars, planets and galaxies (the rest is made up of undetected dark matter and dark energy).",
             numer: 1,
             denom: 25,
             source: "Space.com",
