@@ -84,6 +84,10 @@
 }
 
 .scroll-to-top-btn {
-    color: var(--color-primary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.scroll-to-top-btn:hover {
     background-color: var(--color-quinary);
 }
