@@ -7,6 +7,7 @@ window.onload = () => {
     const btnRandom = document.querySelector(".page-top__btn-random");
     const outputAns = document.querySelector(".output__text");
     const outputArea = document.querySelector(".output__dots-container");
+    const btnScrollToTop = document.querySelector(".scroll-to-top-btn");
 
     // user input display
     let x = document.querySelector(".question__x");
@@ -594,6 +595,11 @@ window.onload = () => {
         formNumerator.focus();
     }
 
+    // scroll to top
+    let scrollToTop = () => {
+        document.documentElement.scrollTop = 0;
+    }
+
     // FOOTER - COPYRIGHT YEAR
     let copyDate = new Date();
     let currentYr = copyDate.getFullYear();
@@ -625,7 +631,5 @@ window.onload = () => {
     colourForm.addEventListener("input", toggleStyleSheets);
 
     // back-to-top btn
-    document.querySelector(".scroll-to-top-btn").addEventListener("click", () => {
-        document.documentElement.scrollTop = 0;
-    });
+    btnScrollToTop.addEventListener("click", scrollToTop);
 }
