@@ -312,7 +312,15 @@ window.onload = () => {
             source: "National Safety Council",
             sourceURL: "https://injuryfacts.nsc.org/all-injuries/preventable-death-overview/odds-of-dying/",
             retrieveDate: "2023-05-16"
-        }
+        },
+        {
+            desc: "Out of 50 air particles on Earth, 39 are nitrogen. The rest are mostly oxygen.",
+            numer: 39,
+            denom: 50,
+            source: "NASA",
+            sourceURL: "https://climate.nasa.gov/news/2491/10-interesting-things-about-air/#:~:text=The%20air%20in%20Earth's%20atmosphere,nitrogen%20and%2021%20percent%20oxygen.",
+            retrieveDate: "2023-06-02"
+        },
     ];
 
     // FUNCTIONS
