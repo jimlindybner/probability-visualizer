@@ -328,7 +328,7 @@ window.onload = () => {
             denom: 25,
             source: "NASA",
             sourceURL: "https://mars.nasa.gov/all-about-mars/facts/",
-            retrievalDate: "2023-06-03"
+            retrieveDate: "2023-06-03"
         },
         {
             desc: "If the solar system were to be divided into 5,000 equal parts, 4,993 would be made up of the sun's mass (the remaining 7 parts would mostly be just the planet Jupiter).",
