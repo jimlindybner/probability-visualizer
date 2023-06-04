@@ -141,9 +141,19 @@ main {
    animation: fade-in 2s;
 }
 
+.page-top__colour-toggle {
+    display: inline-block;
+    border: 0.125rem solid var(--color-primary);
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    margin: 0.15rem;
+}
+
 .colour-toggle-field__legend {
     float: left;
-    margin-top: 0.125rem;
+    margin-top: 0.15rem;
 }
 
 .form__question {
@@ -260,16 +270,6 @@ main {
     color: var(--color-quinary);
 }
 
-.page-top__colour-toggle {
-    display: inline-block;
-    border: 0.125rem solid var(--color-primary);
-    border-radius: 0.5rem;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    padding: 0.5rem 1rem;
-    margin: 0.15rem;
-}
-
 div.output__dots-container {
     margin: 1rem 0;
     background-color: var(--color-secondary);
@@ -308,7 +308,7 @@ div.output__dots-container {
     color: var(--color-secondary);
     background-color: var(--color-tertiary);
     border: 0;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     opacity: 0.8;
     cursor: pointer;
     transition: 0.2s;
