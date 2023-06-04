@@ -380,8 +380,9 @@ window.onload = () => {
             y.innerHTML = parseInt(inputDenominator).toLocaleString("en-CA");
         }
 
-        // change a to an if numerator = 11, 18, 11000 or starts with 8
-        if (inputNumerator === "11" || inputNumerator === "11000" || inputNumerator === "18" || inputNumerator === "8" || inputNumerator.startsWith("8")) {
+        // change a to an if numerator = 11, in the 11,000s, 18 or starts with 8
+        let elevenKRegex = /^(11)\d{3}$/;
+        if (inputNumerator === "11" || elevenKRegex.test(inputNumerator) || inputNumerator === "18" || inputNumerator === "8" || inputNumerator.startsWith("8")) {
             aAn.innerHTML = "an";
         } else {
             aAn.innerHTML = "a";
