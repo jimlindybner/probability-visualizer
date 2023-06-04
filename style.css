@@ -77,10 +77,6 @@ ul li {
     margin-left: 1.25rem;
 }
 
-input[type="radio"] {
-    accent-color: var(--color-tertiary);
-}
-
 header,
 footer {
     color: var(--color-secondary);
@@ -153,6 +149,15 @@ main {
     color: var(--color-primary);
     padding: 0.5rem 1rem;
     margin: 0.15rem;
+}
+
+.page-top__colour-toggle input[type="radio"] {
+    accent-color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+.page-top__colour-toggle label {
+    cursor: pointer;
 }
 
 .colour-toggle__legend {
