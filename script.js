@@ -18,7 +18,7 @@ window.onload = () => {
     const colourlessCSS = document.styleSheets[1];
 
     // colour toggle
-    const colourForm = document.forms.colour_form;
+    const colourToggle = document.querySelector(".page-top__colour-toggle");
     const colourOn = document.querySelector("#colour-on");
     const colourOff = document.querySelector("#colour-off");
 
@@ -628,7 +628,7 @@ window.onload = () => {
     form.denominator.addEventListener("input", displayInput);
 
     // toggle colour
-    colourForm.addEventListener("input", toggleStyleSheets);
+    colourToggle.addEventListener("input", toggleStyleSheets);
 
     // scroll-to-top btn
     btnScrollToTop.addEventListener("click", scrollToTop);

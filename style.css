@@ -151,7 +151,7 @@ main {
     margin: 0.15rem;
 }
 
-.colour-toggle-field__legend {
+.colour-toggle__legend {
     float: left;
     margin-top: 0.15rem;
     margin-right: 0.5rem;
@@ -338,7 +338,7 @@ div.output__dots-container {
         margin: 2rem auto;
     }
 
-    .colour-toggle-field__legend {
+    .colour-toggle__legend {
         margin-top: 0;
     }
 }
