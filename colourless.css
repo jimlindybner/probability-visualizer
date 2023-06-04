@@ -1,7 +1,3 @@
-input[type="radio"] {
-    accent-color: var(--color-primary);
-}
-
 .header-copy .text-tertiary-color {
     color: var(--color-secondary);
 }
@@ -44,6 +40,10 @@ input[type="radio"] {
 .page-top__btn-reload_disabled:hover {
     background-color: var(--color-secondary);
     color: var(--color-quinary);
+}
+
+.page-top__colour-toggle input[type="radio"] {
+    accent-color: var(--color-primary);
 }
 
 .output__text a,
