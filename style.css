@@ -77,6 +77,10 @@ ul li {
     margin-left: 1.25rem;
 }
 
+input[type="radio"] {
+    accent-color: var(--color-tertiary);
+}
+
 header,
 footer {
     color: var(--color-secondary);
