@@ -287,7 +287,6 @@ div.output__dots-container {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    overflow: scroll;
     border-radius: 0.5rem;
     padding: 1rem;
 }
