@@ -46,6 +46,10 @@
     accent-color: var(--color-primary);
 }
 
+.form__question .text-tertiary-color {
+    text-decoration: underline;
+}
+
 .output__text a,
 .output__text a:link {
     color: var(--color-primary);
