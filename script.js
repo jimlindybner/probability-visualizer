@@ -558,6 +558,13 @@ window.onload = () => {
         // call visualization function
         visualize(simpleNumerator, simpleDenominator);
 
+        // re-enable pagetop btns (3s delay)
+        if (btnRandom.disabled === true &&
+            btnReload.disabled === true &&
+            colourToggle.disabled === true) {
+            setTimeout(enablePagetopBtns, 3000);
+        }
+
         // focus on btnReload after a few seconds (when page-top btns are re-enabled)
         setTimeout(() => {
             btnReload.focus();
