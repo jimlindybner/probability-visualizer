@@ -267,7 +267,8 @@ main {
 }
 
 .page-top__btn-random_disabled,
-.page-top__btn-reload_disabled {
+.page-top__btn-reload_disabled,
+.page-top__colour-toggle_disabled {
     cursor: not-allowed;
     background-color: var(--color-secondary);
     color: var(--color-quinary);

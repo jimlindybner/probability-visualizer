@@ -389,6 +389,26 @@ window.onload = () => {
         }
     }
 
+    // disable pagetop btns
+    let disablePagetopBtns = () => {
+        btnRandom.disabled = true;
+        btnReload.disabled = true;
+        colourToggle.disabled = true;
+        btnRandom.classList.add("page-top__btn-random_disabled");
+        btnReload.classList.add("page-top__btn-reload_disabled");
+        colourToggle.classList.add("page-top__colour-toggle_disabled");
+    }
+
+    // enable pagetop btns
+    let enablePagetopBtns = () => {
+        btnRandom.disabled = false;
+        btnReload.disabled = false;
+        colourToggle.disabled = false;
+        btnRandom.classList.remove("page-top__btn-random_disabled");
+        btnReload.classList.remove("page-top__btn-reload_disabled");
+        colourToggle.classList.remove("page-top__colour-toggle_disabled");
+    }
+
     // visualization
     let visualize = (numerator, denominator) => {
         // output-area: create dots based on numerator
@@ -404,22 +424,6 @@ window.onload = () => {
             dot.className = "dot";
             outputArea.appendChild(dot);
         }
-    }
-
-    // disable pagetop btns
-    let disablePagetopBtns = () => {
-        btnRandom.disabled = true;
-        btnReload.disabled = true;
-        btnRandom.classList.add("page-top__btn-random_disabled");
-        btnReload.classList.add("page-top__btn-reload_disabled");
-        setTimeout(() => {
-            btnRandom.disabled = false;
-            btnRandom.classList.remove("page-top__btn-random_disabled");
-        }, 3000);
-        setTimeout(() => {
-            btnReload.disabled = false;
-            btnReload.classList.remove("page-top__btn-reload_disabled");
-        }, 3000);
     }
 
     // random stat
@@ -460,6 +464,11 @@ window.onload = () => {
 
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
+
+        // re-enable pagetop btns (3s delay)
+        if (btnRandom.disabled === true && btnReload.disabled === true) {
+            setTimeout(enablePagetopBtns, 3000);
+        }
     }
 
     // greatest common divisor
@@ -521,7 +530,7 @@ window.onload = () => {
             return false;
         }
 
-        // disable pagetop btns for a few seconds
+        // disable pagetop btns (until function run completes)
         disablePagetopBtns();
 
         // hide form
@@ -629,7 +638,7 @@ window.onload = () => {
     form.denominator.addEventListener("input", displayInput);
 
     // toggle colour
-    colourToggle.addEventListener("input", toggleStyleSheets);
+    colourToggle.addEventListener("click", toggleStyleSheets);
 
     // scroll-to-top btn
     btnScrollToTop.addEventListener("click", scrollToTop);
