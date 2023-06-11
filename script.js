@@ -465,9 +465,9 @@ window.onload = () => {
         // call visualization function
         visualize(randomStatNumer, randomStatDenom);
 
-        // re-enable pagetop btns (3s delay)
+        // re-enable pagetop btns (1000ms delay)
         if (btnRandom.disabled === true && btnReload.disabled === true) {
-            setTimeout(enablePagetopBtns, 3000);
+            setTimeout(enablePagetopBtns, 1000);
         }
     }
 
@@ -558,17 +558,17 @@ window.onload = () => {
         // call visualization function
         visualize(simpleNumerator, simpleDenominator);
 
-        // re-enable pagetop btns (3s delay)
+        // re-enable pagetop btns (1000ms delay)
         if (btnRandom.disabled === true &&
             btnReload.disabled === true &&
             colourToggle.disabled === true) {
-            setTimeout(enablePagetopBtns, 3000);
+            setTimeout(enablePagetopBtns, 1000);
         }
 
         // focus on btnReload after a few seconds (when page-top btns are re-enabled)
         setTimeout(() => {
             btnReload.focus();
-        }, 3000);
+        }, 1000);
     }
 
     // refresh window function
