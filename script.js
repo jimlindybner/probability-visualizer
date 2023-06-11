@@ -353,6 +353,14 @@ window.onload = () => {
             source: "Wikipedia",
             sourceURL: "https://en.wikipedia.org/wiki/Southern_Hemisphere#:~:text=More%20than%20850%20million%20people,the%20total%20global%20human%20population.",
             retrieveDate: "2023-06-03"
+        },
+        {
+            desc: "Out of the world's roughly 7,000 languages, only 15 have over 100,000 speakers. That's the same rate as 3 out of 1,400.",
+            numer: 3,
+            denom: 1400,
+            source: "Everything Everywhere Daily podcast",
+            sourceURL: "https://everything-everywhere.com/esperanto-and-the-search-for-a-global-language/",
+            retrieveDate: "2023-06-11"
         }
     ];
 
