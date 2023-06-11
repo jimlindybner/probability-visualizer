@@ -355,10 +355,10 @@ window.onload = () => {
             retrieveDate: "2023-06-03"
         },
         {
-            desc: "Out of the world's roughly 7,000 languages, only 15 have over 100,000 speakers. That's the same rate as 3 out of 1,400.",
+            desc: "Out of the world's roughly 7,000 languages, only 15 have over 100,000 speakers. That's just 3 in 1,400!",
             numer: 3,
             denom: 1400,
-            source: "Everything Everywhere Daily podcast",
+            source: "Everything Everywhere Daily",
             sourceURL: "https://everything-everywhere.com/esperanto-and-the-search-for-a-global-language/",
             retrieveDate: "2023-06-11"
         }
