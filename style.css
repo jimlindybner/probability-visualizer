@@ -156,6 +156,10 @@ main {
     cursor: pointer;
 }
 
+.page-top__colour-toggle input[type="radio"]:disabled {
+    cursor: not-allowed;
+}
+
 .page-top__colour-toggle label {
     cursor: pointer;
 }
@@ -268,7 +272,9 @@ main {
 
 .page-top__btn-random_disabled,
 .page-top__btn-reload_disabled,
-.page-top__colour-toggle_disabled {
+.page-top__colour-toggle_disabled, 
+.page-top__colour-toggle_disabled input,
+.page-top__colour-toggle_disabled label {
     cursor: not-allowed;
     background-color: var(--color-secondary);
     color: var(--color-quinary);
