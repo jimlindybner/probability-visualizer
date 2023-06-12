@@ -18,7 +18,7 @@ window.onload = () => {
     const colourlessCSS = document.styleSheets[1];
 
     // colour toggle
-    const colourToggle = document.querySelector(".page-top__btn-colour");
+    const btnColour = document.querySelector(".page-top__btn-colour");
     const colourCheckbox = document.querySelector(".colour-toggle__input");
 
     // main form
@@ -32,6 +32,9 @@ window.onload = () => {
     const msgInputError1 = "Please enter only natural numbers (1, 2, 3, 4, etc.) up to 100,000.";
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The probability figures above may not be exact due to rounding.";
+
+    // page-top btns temporary disabling
+    const msDelay = 3000;
 
     // ENABLE COLOUR ON PAGE LOAD
     colourlessCSS.disabled = true;
@@ -77,20 +80,20 @@ window.onload = () => {
     let disablePagetopBtns = () => {
         btnRandom.disabled = true;
         btnReload.disabled = true;
-        colourToggle.disabled = true;
+        btnColour.disabled = true;
         btnRandom.classList.add("page-top__btn-random_disabled");
         btnReload.classList.add("page-top__btn-reload_disabled");
-        colourToggle.classList.add("page-top__colour-toggle_disabled");
+        btnColour.classList.add("page-top__btn-colour_disabled");
     }
 
     // enable pagetop btns
     let enablePagetopBtns = () => {
         btnRandom.disabled = false;
         btnReload.disabled = false;
-        colourToggle.disabled = false;
+        btnColour.disabled = false;
         btnRandom.classList.remove("page-top__btn-random_disabled");
         btnReload.classList.remove("page-top__btn-reload_disabled");
-        colourToggle.classList.remove("page-top__colour-toggle_disabled");
+        btnColour.classList.remove("page-top__btn-colour_disabled");
     }
 
     // visualization
@@ -151,7 +154,7 @@ window.onload = () => {
 
         // re-enable pagetop btns (1000ms delay)
         if (btnRandom.disabled === true && btnReload.disabled === true) {
-            setTimeout(enablePagetopBtns, 1000);
+            setTimeout(enablePagetopBtns, msDelay);
         }
     }
 
@@ -245,14 +248,14 @@ window.onload = () => {
         // re-enable pagetop btns (1000ms delay)
         if (btnRandom.disabled === true &&
             btnReload.disabled === true &&
-            colourToggle.disabled === true) {
-            setTimeout(enablePagetopBtns, 1000);
+            btnColour.disabled === true) {
+            setTimeout(enablePagetopBtns, msDelay);
         }
 
         // focus on btnReload after a few seconds (when page-top btns are re-enabled)
         setTimeout(() => {
             btnReload.focus();
-        }, 1000);
+        }, msDelay);
     }
 
     // refresh window function
@@ -329,7 +332,7 @@ window.onload = () => {
     form.denominator.addEventListener("input", displayInput);
 
     // toggle colour
-    colourToggle.addEventListener("click", toggleColour);
+    btnColour.addEventListener("click", toggleColour);
 
     // scroll-to-top btn
     btnScrollToTop.addEventListener("click", scrollToTop);

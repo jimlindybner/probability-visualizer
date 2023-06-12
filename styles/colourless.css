@@ -29,7 +29,8 @@
 }
 
 .page-top__btn-random_disabled,
-.page-top__btn-reload_disabled {
+.page-top__btn-reload_disabled,
+.page-top__btn-colour_disabled {
     cursor: not-allowed;
     background-color: var(--color-secondary);
     color: var(--color-quinary);
@@ -37,13 +38,10 @@
 }
 
 .page-top__btn-random_disabled:hover,
-.page-top__btn-reload_disabled:hover {
+.page-top__btn-reload_disabled:hover,
+.page-top__btn-colour_disabled:hover {
     background-color: var(--color-secondary);
     color: var(--color-quinary);
-}
-
-.page-top__colour-toggle input[type="radio"] {
-    accent-color: var(--color-primary);
 }
 
 .form__question .text-tertiary-color {

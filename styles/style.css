@@ -243,9 +243,7 @@ main {
 
 .page-top__btn-random_disabled,
 .page-top__btn-reload_disabled,
-.page-top__colour-toggle_disabled, 
-.page-top__colour-toggle_disabled input,
-.page-top__colour-toggle_disabled label {
+.page-top__btn-colour_disabled {
     cursor: not-allowed;
     background-color: var(--color-secondary);
     color: var(--color-quinary);
@@ -253,7 +251,8 @@ main {
 }
 
 .page-top__btn-random_disabled:hover,
-.page-top__btn-reload_disabled:hover {
+.page-top__btn-reload_disabled:hover,
+.page-top__btn-colour_disabled:hover {
     background-color: var(--color-secondary);
     color: var(--color-quinary);
 }
