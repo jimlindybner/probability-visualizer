@@ -54,10 +54,10 @@ table {
 
 /* Defaults */
 :root {
-    --color-primary: #000;
-    --color-secondary: #fff;
-    --color-tertiary: #f00;
-    --color-quaternary: #ff8c8c;
+    --color-primary: #131313;
+    --color-secondary: #edddd4;
+    --color-tertiary: #c44536;
+    --color-quaternary: #772e25;
     --color-quinary: #bfbfbf;
 }
 
