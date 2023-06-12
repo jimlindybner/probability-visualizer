@@ -18,9 +18,8 @@ window.onload = () => {
     const colourlessCSS = document.styleSheets[1];
 
     // colour toggle
-    const colourToggle = document.querySelector(".page-top__colour-toggle");
-    const colourOn = document.querySelector("#colour-on");
-    const colourOff = document.querySelector("#colour-off");
+    const colourToggle = document.querySelector(".page-top__btn-colour");
+    const colourCheckbox = document.querySelector(".colour-toggle__input");
 
     // main form
     const form = document.forms.visualization_form;
@@ -36,6 +35,7 @@ window.onload = () => {
 
     // ENABLE COLOUR ON PAGE LOAD
     colourlessCSS.disabled = true;
+    colourCheckbox.checked = true;
 
     // FOCUS ON NUMERATOR INPUT ON PAGE LOAD
     formNumerator.focus();
@@ -261,13 +261,13 @@ window.onload = () => {
     }
 
     // toggle style sheets
-    let toggleStyleSheets = () => {
-        if (colourOn.checked) {
-            colourlessCSS.disabled = true;
-        } else if (colourOff.checked) {
+    let toggleColour = () => {
+        if (colourCheckbox.checked === true) {
             colourlessCSS.disabled = false;
+            colourCheckbox.checked = false;
         } else {
             colourlessCSS.disabled = true;
+            colourCheckbox.checked = true;
         }
     }
 
@@ -329,7 +329,7 @@ window.onload = () => {
     form.denominator.addEventListener("input", displayInput);
 
     // toggle colour
-    colourToggle.addEventListener("click", toggleStyleSheets);
+    colourToggle.addEventListener("click", toggleColour);
 
     // scroll-to-top btn
     btnScrollToTop.addEventListener("click", scrollToTop);
