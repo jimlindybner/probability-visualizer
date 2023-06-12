@@ -34,7 +34,7 @@ window.onload = () => {
     const msgRoundedFigures = "Note: The probability figures above may not be exact due to rounding.";
 
     // page-top btns temporary disabling
-    const msDelay = 3000;
+    const msDelay = 1000;
 
     // ENABLE COLOUR ON PAGE LOAD
     colourlessCSS.disabled = true;
