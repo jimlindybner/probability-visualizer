@@ -18,9 +18,8 @@ window.onload = () => {
     const colourlessCSS = document.styleSheets[1];
 
     // colour toggle
-    const colourToggle = document.querySelector(".page-top__colour-toggle");
-    const colourOn = document.querySelector("#colour-on");
-    const colourOff = document.querySelector("#colour-off");
+    const btnColour = document.querySelector(".page-top__btn-colour");
+    const colourCheckbox = document.querySelector(".colour-toggle__input");
 
     // main form
     const form = document.forms.visualization_form;
@@ -34,8 +33,12 @@ window.onload = () => {
     const msgInputError2 = "The numerator cannot be greater than the denominator.";
     const msgRoundedFigures = "Note: The probability figures above may not be exact due to rounding.";
 
+    // page-top btns temporary disabling
+    const msDelay = 1000;
+
     // ENABLE COLOUR ON PAGE LOAD
     colourlessCSS.disabled = true;
+    colourCheckbox.checked = true;
 
     // FOCUS ON NUMERATOR INPUT ON PAGE LOAD
     formNumerator.focus();
@@ -77,20 +80,20 @@ window.onload = () => {
     let disablePagetopBtns = () => {
         btnRandom.disabled = true;
         btnReload.disabled = true;
-        colourToggle.disabled = true;
+        btnColour.disabled = true;
         btnRandom.classList.add("page-top__btn-random_disabled");
         btnReload.classList.add("page-top__btn-reload_disabled");
-        colourToggle.classList.add("page-top__colour-toggle_disabled");
+        btnColour.classList.add("page-top__btn-colour_disabled");
     }
 
     // enable pagetop btns
     let enablePagetopBtns = () => {
         btnRandom.disabled = false;
         btnReload.disabled = false;
-        colourToggle.disabled = false;
+        btnColour.disabled = false;
         btnRandom.classList.remove("page-top__btn-random_disabled");
         btnReload.classList.remove("page-top__btn-reload_disabled");
-        colourToggle.classList.remove("page-top__colour-toggle_disabled");
+        btnColour.classList.remove("page-top__btn-colour_disabled");
     }
 
     // visualization
@@ -151,7 +154,7 @@ window.onload = () => {
 
         // re-enable pagetop btns (1000ms delay)
         if (btnRandom.disabled === true && btnReload.disabled === true) {
-            setTimeout(enablePagetopBtns, 1000);
+            setTimeout(enablePagetopBtns, msDelay);
         }
     }
 
@@ -245,14 +248,14 @@ window.onload = () => {
         // re-enable pagetop btns (1000ms delay)
         if (btnRandom.disabled === true &&
             btnReload.disabled === true &&
-            colourToggle.disabled === true) {
-            setTimeout(enablePagetopBtns, 1000);
+            btnColour.disabled === true) {
+            setTimeout(enablePagetopBtns, msDelay);
         }
 
         // focus on btnReload after a few seconds (when page-top btns are re-enabled)
         setTimeout(() => {
             btnReload.focus();
-        }, 1000);
+        }, msDelay);
     }
 
     // refresh window function
@@ -261,13 +264,13 @@ window.onload = () => {
     }
 
     // toggle style sheets
-    let toggleStyleSheets = () => {
-        if (colourOn.checked) {
-            colourlessCSS.disabled = true;
-        } else if (colourOff.checked) {
+    let toggleColour = () => {
+        if (colourCheckbox.checked === true) {
             colourlessCSS.disabled = false;
+            colourCheckbox.checked = false;
         } else {
             colourlessCSS.disabled = true;
+            colourCheckbox.checked = true;
         }
     }
 
@@ -329,7 +332,7 @@ window.onload = () => {
     form.denominator.addEventListener("input", displayInput);
 
     // toggle colour
-    colourToggle.addEventListener("click", toggleStyleSheets);
+    btnColour.addEventListener("click", toggleColour);
 
     // scroll-to-top btn
     btnScrollToTop.addEventListener("click", scrollToTop);
