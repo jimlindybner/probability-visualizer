@@ -347,7 +347,6 @@ div.output__dots-container {
 
     div.output__dots-container {
         justify-content: center;
-        max-width: 30rem;
         margin-left: auto;
         margin-right: auto;
     }
