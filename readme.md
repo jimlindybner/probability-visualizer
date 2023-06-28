@@ -9,13 +9,13 @@ By generating red and black dots that correspond to specific inputs, the *Probab
 ## Using this app: Two Main Features
 
 1. ***Your Stat*** (the default):
-    - Lets users enter an "*x*-in-*y*" fraction.
-    - The app will generate coloured dots to help the users visualize their inputted fraction.
-    - The app will also calculate and display the probabilities and odds.
-    - For percentages, enter the desired value for *x* and "100" for *y*.
+    * Lets users enter an "*x*-in-*y*" fraction.
+    * The app will generate coloured dots to help the users visualize their inputted fraction.
+    * The app will also calculate and display the probabilities and odds.
+    * For percentages, enter the desired value for *x* and "100" for *y*.
 
 2. ***Random Stat***:
-    - Generates and displays visualizations for the odds and probabilities of interesting random statistics and facts already stored in the web app.
+    * Generates and displays visualizations for the odds and probabilities of interesting random statistics and facts already stored in the web app.
 
 ## Accessibility Notes
 
