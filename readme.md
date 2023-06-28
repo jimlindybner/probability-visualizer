@@ -15,7 +15,7 @@ Using red and black dots, this app clearly illustrates probabilities and odds &m
     - For percentages, enter the desired value for *x* and "100" for *y*.
 
 - ***Random Stat***:
-    - Generates visualizations for the odds and probabilities of random statistics and facts already stored in the web app.
+    - Generates visualizations for the odds and probabilities of interesting random statistics and facts already stored in the web app.
 
 ## Additional Notes
 
