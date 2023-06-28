@@ -2,7 +2,7 @@
 
 > A data visualization web app that helps you see and understand your odds!
 
-*Data visualization* is important to organizations of all stripes these days. This simple app can serve as a useful educational tool to demonstrate the value of (and fun in) visualizing data.
+*Data visualization* is increasingly important to organizations of all stripes. This simple app can serve as a useful educational tool to demonstrate the value of (and fun in) visualizing data.
 
 By generating red and black dots that correspond to specific inputs, the *Probability Visualizer* clearly illustrates probabilities and odds &mdash; turning abstract numbers into clear, easy-to-grasp visual representations.
 
