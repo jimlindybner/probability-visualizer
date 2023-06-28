@@ -1,5 +1,7 @@
 # Probability Visualizer
 
+## Introduction
+
 A data visualization web app that helps you see and understand your odds!
 
 “Data visualization” is important for organizations of all stripes these days. This simple app can serve as a useful educational tool to demonstrate the value of (and fun in) visualizing data.
