@@ -10,7 +10,7 @@ Using red and black dots, this app clearly illustrates probabilities and odds &m
 
 - ***Your Stat*** (the default):
     - Lets users enter an "*x*-in-*y*" fraction
-    - The app will generate coloured dots to help the user visualize the entered fraction
+    - The app will generate coloured dots to help the users visualize their inputted fraction
     - The app will also calculate and display the probabilities and odds
     - For percentages, enter the desired value for *x* and "100" for *y*
 
