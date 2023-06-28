@@ -19,9 +19,9 @@ Using red and black dots, this app clearly illustrates probabilities and odds &m
 
 ## Accessibility Notes
 
-I've also added a "colour switch" that lets users turn colour "on" and "off" to help folks dealing with colour-blindness more easily use this web app.
+I've also added a "colour switch" that lets users turn colour "on" and "off" to help folks living with colour-vision deficiency (especially red-green colour blindness) more easily use this web app.
 
-Instead of red and black dots for the visualization, the accessibility version instead generates filled and unfilled (black and white) dots to represent probabilities and odds.
+For the visualization, instead of generating red and black dots, which aren't easy for red-green CVD users to distinguish, the accessibility version instead generates filled and unfilled (black and white) dots to represent probabilities and odds.
 
 ## Inspirations
 
