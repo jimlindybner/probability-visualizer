@@ -8,13 +8,13 @@ Using red and black dots, this app clearly illustrates probabilities and odds &m
 
 ## 2 Main Features:
 
-- ***Your Stat*** (the default):
+1. ***Your Stat*** (the default):
     - Lets users enter an "*x*-in-*y*" fraction.
     - The app will generate coloured dots to help the users visualize their inputted fraction.
     - The app will also calculate and display the probabilities and odds.
     - For percentages, enter the desired value for *x* and "100" for *y*.
 
-- ***Random Stat***:
+2. ***Random Stat***:
     - Generates visualizations for the odds and probabilities of interesting random statistics and facts already stored in the web app.
 
 ## Additional Notes
