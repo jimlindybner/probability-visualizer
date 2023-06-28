@@ -8,10 +8,10 @@ Using red and black dots, this app clearly illustrates probabilities and odds &m
 
 ## 2 Main Features:
 
-- ***Random Stat*** visualizes the odds and probabilities of random statistics and facts stored in the web app.
-
-- ***Your Stat*** (the default) lets you enter a fraction to help you visualize the probabilities and odds of "*x* in *y*."
+- ***Your Stat*** (the default): Lets you enter a fraction to help you visualize the "*x* in *y*" probabilities and odds.
     - Note: For percentages, enter your desired value for *x* and "100" for *y*.
+
+- ***Random Stat***: Generates visualizations for the odds and probabilities of random statistics and facts stored in the web app.
 
 ## Additional Notes
 
