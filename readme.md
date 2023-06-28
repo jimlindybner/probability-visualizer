@@ -8,13 +8,14 @@ Using red and black dots, this app clearly illustrates probabilities and odds &m
 
 ## 2 Main Features:
 
-- “Random Stat” visualizes the odds and probabilities of random statistics and facts stored on the website.
+- ***Random Stat*** visualizes the odds and probabilities of random statistics and facts stored in the web app.
 
-- “Your Stat” (the default) lets you enter a fraction to help you visualize the probabilities and odds of “x in y.”
+- ***Your Stat*** (the default) lets you enter a fraction to help you visualize the probabilities and odds of "*x* in *y*."
+    - Note: For percentages, enter your desired value for *x* and "100" for *y*.
 
 ## Additional Notes
 
-I've also added a “colour switch” that lets users turn colour "on" and "off" to help folks dealing with colour-blindness more easily use this web app.
+I've also added a "colour switch" that lets users turn colour "on" and "off" to help folks dealing with colour-blindness more easily use this web app.
 
 Instead of red and black dots for the visualization, the accessibility version instead generates filled and unfilled (black and white) dots to represent probabilities and odds.
 
