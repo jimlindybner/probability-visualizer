@@ -319,5 +319,21 @@ let funStats = [
         source: "Everything Everywhere Daily",
         sourceURL: "https://everything-everywhere.com/esperanto-and-the-search-for-a-global-language/",
         retrieveDate: "2023-06-11"
+    },
+    {
+        desc: "In 1918, 8 out of 25 children worldwide didn't live long enough to see their 5th birthday (that's come down to 1 in 25 today).",
+        numer: 8,
+        denom: 25,
+        source: "The Data Detective",
+        sourceURL: "https://timharford.com/books/datadetective/",
+        retrieveDate: "2023-07-03"
+    },
+    {
+        desc: "In the early 1800s, 19 out of 20 people worldwide lived in \"extreme poverty\" (today, it's 1 in 10).",
+        numer: 19,
+        denom: 20,
+        source: "The Data Detective",
+        sourceURL: "https://timharford.com/books/datadetective/",
+        retrieveDate: "2023-07-03"
     }
 ];
