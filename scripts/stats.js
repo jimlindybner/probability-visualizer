@@ -335,5 +335,13 @@ let funStats = [
         source: "The Data Detective",
         sourceURL: "https://timharford.com/books/datadetective/",
         retrieveDate: "2023-07-03"
+    },
+    {
+        desc: "Toronto is officially home to 2.8 million people&hellip; That makes every 14th Canadian a Torontonian.",
+        numer: 1,
+        denom: 14,
+        source: "The Toronto Star",
+        sourceURL: "https://www.thestar.com/opinion/contributors/2023/06/29/mayoral-byelection-what-has-happened-to-torontos-tories.html",
+        retrieveDate: "2023-07-03"
     }
 ];
