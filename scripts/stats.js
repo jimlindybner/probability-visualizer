@@ -324,7 +324,7 @@ let funStats = [
         desc: "In 1918, 8 out of 25 children worldwide didn't live long enough to see their 5th birthday (that's come down to 1 in 25 today).",
         numer: 8,
         denom: 25,
-        source: "The Data Detective",
+        source: "The Data Detective: Ten Easy Rules to Make Sense of Statistics",
         sourceURL: "https://timharford.com/books/datadetective/",
         retrieveDate: "2023-07-03"
     },
@@ -332,7 +332,7 @@ let funStats = [
         desc: "In the early 1800s, 19 out of 20 people worldwide lived in \"extreme poverty\" (today, it's 1 in 10).",
         numer: 19,
         denom: 20,
-        source: "The Data Detective",
+        source: "The Data Detective: Ten Easy Rules to Make Sense of Statistics",
         sourceURL: "https://timharford.com/books/datadetective/",
         retrieveDate: "2023-07-03"
     },
@@ -342,6 +342,14 @@ let funStats = [
         denom: 14,
         source: "The Toronto Star",
         sourceURL: "https://www.thestar.com/opinion/contributors/2023/06/29/mayoral-byelection-what-has-happened-to-torontos-tories.html",
+        retrieveDate: "2023-07-03"
+    },
+    {
+        desc: "By 2050, the ratio of retirees to workers will rise to 1 in 4.",
+        numer: 1,
+        denom: 4,
+        source: "Money Changes Everything: How Finance Made Civilization Possible",
+        sourceURL: "https://press.princeton.edu/books/hardcover/9780691143781/money-changes-everything",
         retrieveDate: "2023-07-03"
     }
 ];
