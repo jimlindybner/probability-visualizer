@@ -351,5 +351,13 @@ let funStats = [
         source: "Money Changes Everything: How Finance Made Civilization Possible",
         sourceURL: "https://press.princeton.edu/books/hardcover/9780691143781/money-changes-everything",
         retrieveDate: "2023-07-03"
+    },
+    {
+        desc: "75% of the world's population live in \"middle-income countries,\" a class of countries, like India and China according to the World Bank, between rich and poor.",
+        numer: 3,
+        denom: 4,
+        source: "The Economist",
+        sourceURL: "https://www.economist.com/international-relations-a-to-z#middle-income-countries",
+        retrieveDate: "2023-07-06"
     }
 ];
