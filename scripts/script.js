@@ -376,7 +376,7 @@ window.onload = () => {
   let currentYr = copyDate.getFullYear();
   let copyYr = document.querySelector("#copy-yr");
   if (currentYr > 2023) {
-    copyYr.innerHTML = `2023 &ndash; ${currentYr}`;
+    copyYr.innerHTML = `2023&ndash;${currentYr}`;
   } else {
     copyYr.innerHTML = currentYr;
   }
