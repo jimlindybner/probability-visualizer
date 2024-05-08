@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,13 @@
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    
+
     <!-- main stylesheet -->
     <link rel="stylesheet" href="./styles/style.css">
-    
+
     <!-- CVD accessibility stylesheet -->
     <link rel="stylesheet" href="./styles/colourless.css">
-    
+
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="http://probability.lindybner.com/">
     <meta property="og:type" content="website">
@@ -29,9 +30,11 @@
     <meta property="twitter:domain" content="probability.lindybner.com">
     <meta property="twitter:url" content="http://probability.lindybner.com/">
     <meta name="twitter:title" content="Probability Visualizer">
-    <meta name="twitter:description" content="A data visualization web app that helps you see and understand your odds!">
+    <meta name="twitter:description"
+        content="A data visualization web app that helps you see and understand your odds!">
     <meta name="twitter:image" content="http://lindybner.com/images/probability-visualizer.jpeg">
 </head>
+
 <body>
     <!-- header section -->
     <header>
@@ -55,26 +58,31 @@
                         <span class="btn-colour__on">On</span>
                         <span class="btn-colour__off">Off</span>
                     </button>
-                    <input type="checkbox" name="colour" id="colour" class="colour-toggle__input" aria-label="turn colour on or off using 'Colour' button" hidden>
+                    <input type="checkbox" name="colour" id="colour" class="colour-toggle__input"
+                        aria-label="turn colour on or off using 'Colour' button" hidden>
                 </div>
             </div>
             <!-- main visualization form -->
             <form action="#" method="get" name="visualization_form" class="form">
                 <div id="question" class="form__question question">
-                    What does <span class="question__aan">an</span> <span class="text-tertiary-color"><span class="question__x">x</span>-in-<span class="question__y">y</span></span> chance actually look like?
+                    What does <span class="question__aan">an</span> <span class="text-tertiary-color"><span
+                            class="question__x">x</span>-in-<span class="question__y">y</span></span> chance actually
+                    look like?
                 </div>
                 <div id="numerator-denominator-block" class="fraction">
                     <!-- form - numerator -->
                     <div id="numerator-block" class="fraction__numerator numerator">
                         <label for="numerator" class="numerator__label">Numerator&nbsp;=</label>
-                        <input type="number" name="numerator" class="numerator__input" id="numerator" min="1" placeholder="Enter an 'x' value." aria-label="Enter an 'x' value.">
+                        <input type="number" name="numerator" class="numerator__input" id="numerator" min="1"
+                            placeholder="Enter an 'x' value." aria-label="Enter an 'x' value.">
                     </div>
                     <!-- form - numerator end-->
                     <hr class="fraction__vinculum">
                     <!-- form - denominator -->
                     <div id="denominator-block" class="fraction__denominator denominator">
                         <label for="denominator" class="denominator__label">Denominator&nbsp;=</label>
-                        <input type="number" name="denominator" class="denominator__input" id="denominator" min="1" placeholder="Enter a 'y' value." aria-label="Enter a 'y' value.">
+                        <input type="number" name="denominator" class="denominator__input" id="denominator" min="1"
+                            placeholder="Enter a 'y' value." aria-label="Enter a 'y' value.">
                     </div>
                     <!-- form - denominator end -->
                 </div>
@@ -98,23 +106,32 @@
     <footer>
         <div class="footer-copy">
             <div class="inspiration">
-                <p>This visualizer is inspired by the 2022 book <em><a href="https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444" target="_blank">Making Numbers Count: The Art and Science of Communicating Numbers</a></em> by Chip Heath and Karla Starr.</p>
+                <p>This visualizer is inspired by the 2022 book <em><a
+                            href="https://www.simonandschuster.com/books/Making-Numbers-Count/Chip-Heath/9781982165444"
+                            target="_blank">Making Numbers Count: The Art and Science of Communicating Numbers</a></em>
+                    by Chip Heath and Karla Starr.</p>
                 <p>Other similar, amazing resources:</p>
                 <ul>
-                    <li><em><a href="https://timharford.com/books/datadetective/" target="_blank">The Data Detective: Ten Easy Rules to Make Sense of Statistics</a></em> (2021) by Tim Harford.</li>
-                    <li><em><a href="https://www.penguinrandomhouse.ca/books/552885/thinking-in-bets-by-annie-duke/9780735216372" target="_blank">Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts</a></em> (2018) by Annie Duke.</li>
+                    <li><em><a href="https://timharford.com/books/datadetective/" target="_blank">The Data Detective:
+                                Ten Easy Rules to Make Sense of Statistics</a></em> (2021) by Tim Harford.</li>
+                    <li><em><a href="https://www.penguinrandomhouse.ca/books/552885/thinking-in-bets-by-annie-duke/9780735216372"
+                                target="_blank">Thinking in Bets: Making Smarter Decisions When You Don't Have All the
+                                Facts</a></em> (2018) by Annie Duke.</li>
+                    <li><em><a href="https://www.penguinrandomhouse.ca/books/89308/thinking-fast-and-slow-by-daniel-kahneman/9780385676533"
+                                target="_blank">Thinking, Fast and Slow</a></em> (2011) by Daniel Kahneman.</li>
                 </ul>
             </div>
-            <div class="copyright">&copy; <span id="copy-yr"></span> <a href="http://lindybner.com">Jim Lin-Dybner</a>.</div>
+            <div class="copyright">&copy; <span id="copy-yr"></span> <a href="http://lindybner.com">Jim Lin-Dybner</a>.
+            </div>
         </div>
     </footer>
     <!-- footer section end -->
-    
+
     <!-- main script -->
     <script src="./scripts/script.js"></script>
 
     <!-- random stats script -->
     <script src="./scripts/stats.js"></script>
 </body>
-</html>
 
+</html>
