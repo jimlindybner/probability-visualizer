@@ -396,4 +396,12 @@ let funStats = [
       "https://www.economist.com/international-relations-a-to-z#middle-income-countries",
     retrieveDate: "2023-07-06",
   },
+  {
+    desc: "The Mendoza Line is a term from baseball that represents a batting average of .200, used to denote the threshold of subpar hitting performance. Players with a batting average below .200 are often considered to be struggling offensively. The term is named after Mario Mendoza, a shortstop known for his light hitting. A batting average of .200 means a player gets a base hit 20% of the time they are at bat.",
+    numer: 1,
+    denom: 5,
+    source: "Wikipedia",
+    sourceURL: "https://en.wikipedia.org/wiki/Mendoza_Line",
+    retrieveDate: "2024-09-29",
+  },
 ];
